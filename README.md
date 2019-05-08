@@ -1,1 +1,1 @@
-# Cuelogic-Assignment
+Assignment
