@@ -1,0 +1,27 @@
+head {
+  color: black;
+}
+footer{
+  background-color: grey;
+  color: white;
+  border-top: 20%;
+  margin-top: 20%;
+  margin-bottom: 10px;
+}
+body{
+  margin-left: 10px;
+  border-style:groove;
+  border-width: 1px;
+
+}
+img{
+  float: left;
+}
+h2{
+  float: inherit;
+  background-color: black;
+  color: white;
+}
+textarea{
+  text-align: top;
+}
