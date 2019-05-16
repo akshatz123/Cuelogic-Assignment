@@ -5,12 +5,20 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
 <body>
+
+  <script type="text/javascript">
+  function myFunction() {
+  alert(document.querySelector("#name").value);
+  }
+  </script>
   <img src= "cuelogic_logo.png" height="100" width="100" alt="Cuelogic Technologies Pvt Limited"><br><br><br>
   <h2>Cuelogic Technologies Pvt Limited</h2>
   <p>Software Driven Thinking
   <p style="text-align:left"> Contact Us Form
   <form align="justify">
-      Name: <input type="text" name="full_name" placeholder="Enter your Full Name"><br><br>
+      Name: <input type="text" id="name" name="full_name" placeholder="Enter your Full Name"><br><br>
+      <button type="button" onclick="myFunction()">Display</button><br><br>
+
       E-mail: <input type="email" name="emailaddress" placeholder="Enter your E-mail Id"><br><br>
       Query: <textarea rows="4" cols="50" placeholder="Type your message here..."></textarea><br><br>
       <input type="submit" value="Submit" >
