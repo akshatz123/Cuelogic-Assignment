@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HTML BASICS</title>
+    <title>Introduction to HTML BASICS and WWW.</title>
 </head>
 <body>
-  <div>
+<div>
     <!--comments are not executed-->
     <!--h1 to h6 h1 has the largest font size, h6 has the smallest size-->
-     <h1> Introduction to HTML</h1>
-     <!--blockquote-->
-     <blockquote>The World Wide Web (W3) initiative links related information throughout the globe.  HTML provides one simple format for    providing linked information, and  all W3 compatible programs are
-  required to be capable of handling HTML. W3 uses an Internet
-  protocol (Hypertext Transfer Protocol, HTTP), which allows transfer
-  representations to be negotiated between client and server, the
-  result being returned in an extended MIME message.  HTML is
-  therefore just one, but an important one, of the representations
-  used with W3.
-    </blockquote>
+    <h1> Introduction to HTML5 & foundation of WWW.</h1>
+    <!-- Image inserted for HTML and W3C -->
+    <img src="HTML5_logo.png" alt="HTML5 logo" height="240" width="170">&nbsp;
+    <img src="W3C.png" alt="W3C logo" height="240" width="163.5">
+    <!--blockquote-->
+    <blockquote>The <abbr title=" World Wide Web">W3</abbr> initiative links related information throughout the globe.  HTML provides one simple format for providing linked information, and  all W3 compatible programs are required to be capable of handling HTML. W3 uses an Internet protocol <abbr title="Hypertext Transfer Protocol">HTTP</abbr>,  which allows transfer representations to be negotiated between client and server, the result being returned in an extended MIME message.  HTML is therefore just one, but an important one, of the representations used with W3. </blockquote>
+</div>
     <!-- meta tag stores metadata  of the page like author, description and last modified -->
     <meta charset="utf-8">
-    <meta name="author" content="Akshat Zala">
+    <meta name="author" content= "Akshat Zala">
     <meta name="description" content="Description for each of the htmlTags">
     <!--Viewport must for each and every device-->
     <meta name="view-port" content="width=device-width, initial-scale=1.0">
-    <h2> Overview </h2>
+    <h2> History of the Internet </h2>
     <!--object tag to embed all types of files other than any HTML documents-->
-      <object type="application/PDF" data="1992.pdf" width="300px" height="250px" >
-          <param name="PDF">
-      </object>
-    <h3> History </h3>
-      <cite>Tim Berners Lee </cite>  is credited with creating the world wide web and HTML.
+    <cite>Tim Berners Lee </cite>  is credited with creating the world wide web and HTML.<br><br>
+    <object type="application/PDF" data="1992.pdf" width="100%" height="1030px" >
+        <param name="PDF">
+    </object>
+  <br>
     <h3> Summary </h3>
-      <ol>
-        <li>HTML tags like &lt;ul&gt;, &lt;div&gt; </li>
-        <li>HTML tags like &lt;pre&gt; are remainig to be used.</li>
-      </ol>
-      <ul>
+    <!--UL /OL are types of list tags  with attribute type where you can specify -->
+    <ul type="circle">
         <p>There are 3 types of lists.
         <li>Ordered Lists</li>
         <li>Unordered Lists</li>
         <li>Definition Lists</li>
-      </ul>
-    </div>
-    </body>
-    </html>
+    </ul>
+    <ol type="I">
+      <!--u underline, a anchor tag used for adding hyperlink in html5-->
+      <p> <u>Links to HTML Documents</u></p></li>
+      <li><p><a href="https://www.w3schools.com/html/html5_intro.asp"> HTML Introduction </a><br></p></li>
+      <li><p><a href="https://stackoverflow.com/">Stack Overflow</a></p></li>
+      <li><p><a href="https://www.cuelogic.com/"> Software Development Company - Product Development - Cuelogic </a></p></li>
+      <li><p><a href="https://www.history.com/news/who-invented-the-internet"> History of Internet </a></p></li>
+    </ol>
+    <!--table tag used to create tabular data and attributes like border, cellpadding cellspacing -->
+    <table border="1px" cellpadding="10px" cellspacing="10px">
+      <!--tr table row-->
+      <tr>
+      <!--th table heading-->
+        <th>Monthly Budget</th>
+        <th>Monthly Savings</th>
+      </tr>
+      <!--tbody table body-->
+      <tbody>
+        <tr>
+          <!--td table data-->
+          <td>May</td>
+          <td>INR 5500</td>
+        </tr>
+        <tr>
+          <td>June</td>
+          <td>INR 6000</td>
+        </tr>
+      </tbody>
+      <!--tfoot table footer -->
+      <tfoot>
+        <tr>
+          <td><b>Sum</b></td>
+          <td><b>INR 11500</b></td>
+        </tr>
+      </tfoot>
+    </table>
+
+</body>
+</html>
