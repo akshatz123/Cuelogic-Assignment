@@ -4,6 +4,8 @@
     <ttle>Introduction to HTML BASICS and WWW.</title>
 </head>
 <body>
+  <!-- semantic html introduces new tags in HTML5 like header, section, article, aside, nav, sidebar etc --><!--It replaces use of div classes from html 4.01 -->
+<!--article tag inside section tag-->
 <section>
     <!--comments are not executed-->
     <!--h1 to h6 h1 has the largest font size, h6 has the smallest size-->
@@ -12,7 +14,8 @@
     &nbsp;&nbsp;<img src="HTML5_logo.png" alt="HTML5 logo" height="240" width="170">&nbsp;
     <img src="W3C.png" alt="W3C logo" height="240" width="163.5">
     <!--blockquote-->
-    <blockquote>The <abbr title=" World Wide Web">W3</abbr> initiative links related information throughout the globe.  HTML provides one simple format for providing linked information, and  all W3 compatible programs are required to be capable of handling HTML. W3 uses an Internet protocol <abbr title="Hypertext Transfer Protocol">HTTP</abbr>,  which allows transfer representations to be negotiated between client and server, the result being returned in an extended MIME message.  HTML is therefore just one, but an important one, of the representations used with <abbr title="World Wide Web">W3</abbr>. </blockquote>
+    <article class="blockquote">    <blockquote>The <abbr title=" World Wide Web">W3</abbr> initiative links related information throughout the globe.  HTML provides one simple format for providing linked information, and  all <abbr title="World Wide Web">W3</abbr> compatible programs are required to be capable of handling HTML. W3 uses an Internet protocol <abbr title="Hypertext Transfer Protocol">HTTP</abbr>,  which allows transfer representations to be negotiated between client and server, the result being returned in an extended MIME message.  HTML is therefore just one, but an important one, of the representations used with <abbr title="World Wide Web">W3</abbr>. </blockquote>
+    </article>
 </section>
     <!-- meta tag stores metadata  of the page like author, description and last modified -->
     <meta charset="utf-8">
@@ -26,7 +29,39 @@
     <object type="application/PDF" data="1992.pdf" width="100%" height="1030px" >
         <param name="PDF">
     </object>
-  <br>
+<br><br>
+    <!--table tag used to create tabular data and attributes like border, cellpadding cellspacing -->
+    <table border="1px" cellpadding="10px" cellspacing="10px" style="float:right">
+      <!--tr table row-->
+      <tr>
+      <!--th table heading-->
+        <th><b>Monthly Budget</b></th>
+        <th><b>Monthly Savings</b></th>
+        <th>Monthly Expense</th>
+      </tr>
+      <!--tbody table body-->
+      <tbody>
+        <tr>
+          <!--td table data-->
+          <td>May</td>
+          <td>INR 5500</td>
+          <td>INR 6000</td>
+        </tr>
+        <tr>
+          <td>June</td>
+          <td>INR 6000</td>
+          <td>INR 4000</td>
+        </tr>
+      </tbody>
+      <!--tfoot table footer -->
+      <tfoot>
+        <tr>
+          <td><b>Sum</b></td>
+          <td><b>INR 11500</b></td>
+          <td><b>Savings at the end of 2 months: INR 1500</b></td>
+        </tr>
+      </tfoot>
+    </table>
     <h3> Summary </h3>
     <p>There are 3 types of lists.</p>
     <!--UL /OL are types of list tags  with attribute type where you can specify -->
@@ -35,7 +70,6 @@
         <li>Unordered Lists</li>
         <li>Definition Lists</li>
     </ul>
-    <!--u underline -->
     <p> <u>Links to HTML Documents </u></p>
     <ol type="a">
       <!--u underline, a anchor tag used for adding hyperlink in html5-->
@@ -44,33 +78,6 @@
       <li><p><a href="https://www.cuelogic.com/"> Software Development Company - Product Development - Cuelogic </a></p></li>
       <li><p><a href="https://www.history.com/news/who-invented-the-internet"> History of Internet </a></p></li>
     </ol>
-    <!--table tag used to create tabular data and attributes like border, cellpadding cellspacing -->
-    <table border="1px" cellpadding="10px" cellspacing="10px">
-      <!--tr table row-->
-      <tr>
-      <!--th table heading-->
-        <th><b>Monthly Budget</b></th>
-        <th><b>Monthly Savings</b></th>
-      </tr>
-      <!--tbody table body-->
-      <tbody>
-        <tr>
-          <!--td table data-->
-          <td>May</td>
-          <td>INR 5500</td>
-        </tr>
-        <tr>
-          <td>June</td>
-          <td>INR 6000</td>
-        </tr>
-      </tbody>
-      <!--tfoot table footer -->
-      <tfoot>
-        <tr>
-          <td><b>Sum</b></td>
-          <td><b>INR 11500</b></td>
-        </tr>
-      </tfoot>
-    </table>
+    <footer style="fixed">2019 &copy; All rights reserved</footer>
 </body>
 </html>
