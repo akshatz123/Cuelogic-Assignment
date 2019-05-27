@@ -1,0 +1,104 @@
+@import "reset.css";
+
+@import "normalize.css";
+*{
+	padding:0px;
+	margin:0px ;
+	background-color: #ebecf2;
+	max-width:1198px;
+	max-height:1200px;	
+}
+
+.main{
+    position: relative;
+    background-color: #384b59;
+    background-color: #ebecf2
+} 
+
+.main .text1{
+    background-color: #384b59;
+}
+.yellowRectangle{
+	display:inline-block;
+}
+.pinkRectangle{
+	display:inline-block;
+}
+.greenRectangle{
+	display:inline-block;
+}
+.blueRectangle{
+	display:inline-block;
+}
+p{
+	font-size: 18px;
+	color: #363f45;
+	font-family: "Quicksand";
+	font-weight: 500;
+}
+
+h1{
+	font-size: 18px;
+	color: #363f45;
+	font-family: "Quicksand";
+	font-weight:500;
+}
+
+.boxa1{
+	display:inline-block;
+}
+
+.boxa2{
+	display:inline-block;
+}
+
+.boxa3{
+	display:inline-block;
+}
+
+.boxa4{
+	display:inline-block;
+}
+
+.boxb1{
+	display: inline-block;
+}
+
+.one{
+	display: inline-block;
+}
+
+.two{
+	display: inline-block;
+}
+
+.three{
+	display: inline-block;
+}
+
+.four{
+	display: inline-block;
+}
+
+.boxb2{
+	display: inline-block;
+}
+
+.boxb3{
+	display: inline-block;
+}
+
+.boxb4{
+	display: inline-block;
+}
+
+table2{
+	display:inline-block;
+}
+
+.t23{
+	display: inline-block;
+}
+.container1{
+	display: inline-block;
+}

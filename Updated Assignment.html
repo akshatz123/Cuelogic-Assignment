@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPIRE Consulting Group</title>
+        <meta name="view-port" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Updated Assignment.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>  
+    </head>
+    <body>
+		<header style="background-color: #384b59; width:1135px;">
+			<div class="top-right-icons"style="position:relative;">
+				<a href="#"><img src="images/search-icon.png" alt="search-icon" style="position: relative;background-color: #384b59;padding-top: 20px;float: right;"></a>
+				<a href="#"><img src="images/setting-icon.png" alt="setting-icon" style="position: relative;background-color: #384b59;padding-top: 21px;float: right;"></a>
+				<a href="#"><img src="images/message-icon.png" style="position:relative;background-color: #384b59;padding-top:22px;float: right;">
+					<div id="6" style></div>
+				</a>
+					
+            </div>
+			<div style="background-color: #384b59;height: 60px;margin-left:22px">
+                <img src="images/logo.png" alt="logo"  style="background-color: #384b59">&nbsp;&nbsp;
+                <img src="images/menu-icon.png"style="position: relative;padding-top: 15px;background-color: #384b59;">&nbsp;&nbsp;&nbsp;</div>
+        </header>
+		<h1 style="margin-top:109px; margin-left:22px;font-size: 18px;text-transform:uppercase;color: #363f45;font-family:'Quicksand', 500; margin: 109px 0px 0px 22px">City Mall-Project Dashboard</h1>
+        <div class="container1">
+            <div class="yellowRectangle" style="margin-left:22px;margin-top: 38px;position:relative;background-color: #fec606;max-height: 112px;max-width: 271px;">
+				<div style="position: relative;background-color: #fec606;color: white;text-transform: uppercase;font-family:'Quicksand', sans-serif, 16px, 500;width:271px;">Budget</div>    
+				<div style="position: relative;background-color: #f1b606;width: 95px;height: 112px;margin-left: 176px;"><img src="images/doller-icon.png" alt="dollar-icon"></div>
+            	<div style="position: relative;background-color: #fec606;color: white;font-family:'Quicksand',sans-serif,30px,500;">2.3M</div>
+			</div>
+			<!--Next Box-->
+            <div class="pinkRectangle" style="position:relative;background-color: #e81d62;max-height: 112px;max-width: 271px; margin-left: 24px;">
+				<div style="position: relative;background-color: #e81d62;color:white;text-transform: uppercase;font-family: 'Quicksand', sans-serif, 16px,500;width: 271px;">milestone</div>
+            	<div style="position: relative;background-color: #dc1c5d;width: 95px;height: 112px;margin-left: 176px;"><img src="images/graph-icon.png" alt="graph-icon"></div>
+                <div style="position: relative;background-color: #e81d62;	color: white;font-family: 'Quicksand',sans-serif, 30px,500;">24</div>
+			</div>
+			<!--Next Box-->
+            <div class="greenRectangle" style="position: relative;background: #8ac249;max-width: 271px;max-height: 112px;margin-left: 23px;">
+                <div style="position: relative;background-color: #8ac249;color:white;text-transform: uppercase;font-family: 'Quicksand', sans-serif, 16px, 500;">Tasks</div>
+            	<div style="position: relative;background-color: #83b845;width: 95px;height: 112px;margin-left: 176px;"><img src="images/checklist-icon.png " alt="checklist-icon"></div>
+			    <div style="position: relative;background-color: #8ac249;color: white;font-family:'Quicksand', sans-serif, 30px;">137</div>
+			</div>
+			<!--Next Box-->
+            <div class="blueRectangle"style="position: relative;background-color:#2095f2;max-width: 271px;max-height: 112px; margin-left:24px;">
+                <div style="position: relative;background-color: #2095f2;color: white;text-transform: uppercase;font-family: 'Quicksand', sans-serif, 16px,500;">Documents</div>
+			    <div style="position: relative;background-color: #1e8de6; width:89px; height:112px;margin-left:176px"><img src="images/file-icon.png" alt="file-icon"></div>
+            	<div style="position: relative;background-color: #2095f2;color: white;font-family: 'Quicksand', serif  30px, 500;">241</div>
+			</div>
+		</div>
+		<h1 style="position:relative; margin-top:59px;margin-left:22px ;font-size: 18px;text-transform:uppercase;font-family: 'Quicksand',sans-serif,18px,#363f45,500; ">Milestone
+		<img src="images/arrow-right.png" alt="view more"style="float:right;"></h1>
+		<div class="whiteboxes1"style="display: inline-block;">
+		<div class="boxa1" style="position:relative; margin-top:25px;margin-left:22px;  background-color:#fff; height:166px;width:272px;display:inline-block;">
+			<canvas id="newCanvas"width="112px" height="112px" style="position:relative;margin-top:28px;margin-left:75px;margin-bottom:26px;border:1px solid #000000;background-color:#f6efd2"></canvas>
+			<script>
+				var c = document.getElementById("newCanvas");
+				var ctxt = c.getContext("2d");
+				ctxt.beginPath();
+				ctxt.arc(112,112,22,2*Math*PI);
+				ctxt.stroke();
+			</script>
+		</div>
+		<div class="boxa2"style="position:relative; background-color:#fff; height:166px; width:272px; margin-left:22px; ">
+			<canvas id="newCanvas"width="112px" height="112px" style="position:relative;margin-top:28px;margin-left:75px;margin-bottom:26px;border:1px solid #000000;background-color:#f6efd2"></canvas>
+			<script>
+				var c = document.getElementById("newCanvas");
+				var ctxt = c.getContext("2d");
+				ctxt.beginPath();
+				ctxt.arc(112,112,22,2*Math*PI);
+				ctxt.stroke();
+			</script>
+		</div>
+		<div class="boxa3" style="position: relative; background-color:#fff; height:166px; width:270px; margin-left:21px">
+			<canvas id="newCanvas"width="112px" height="112px" style="position:relative;margin-top:28px;margin-left:75px;margin-bottom:26px;border:1px solid #000000;background-color:#f6efd2"></canvas>
+			<script>
+				var c = document.getElementById("newCanvas");
+				var ctxt = c.getContext("2d");
+				ctxt.beginPath();
+				ctxt.arc(112,112,22,2*Math*PI);
+				ctxt.stroke();
+			</script>
+		</div>
+		<div class="boxa4" style="position: relative; background-color:#fff; height:166px; width:270px; margin-left:24px">
+				<canvas id="newCanvas"width="112px" height="112px" style="position:relative;margin-top:28px;margin-left:75px;margin-bottom:26px;border:1px solid #000000;background-color:#f6efd2"></canvas>
+				<script>
+					var c = document.getElementById("newCanvas");
+					var ctxt = c.getContext("2d");
+					ctxt.beginPath();
+					ctxt.arc(112,112,22,2*Math*PI);
+					ctxt.stroke();
+				</script> 
+		</div>
+	</div>
+	<div class="whiteboxes2">
+		<div class="boxb1" style="position: relative; background-color:#fff; height:61px; width:270px; margin-left:22px;font-size: 16px;color: #363f45;font-family: 'Quicksand';font-weight: 500;text-align:center;text-transform: uppercase;">milestone
+		<div class="one" style="position:relative;font-size: 34px;color: #e1e2e9;font-family: 'Quicksand';font-weight: 500;text-align:center;">1</div></div>
+		<div class="boxb2" style="position: relative; background-color:#fff; height:61px; width:270px; margin-left:22px;font-size: 16px;color: #363f45;font-family: 'Quicksand';font-weight: 500;text-align:center;text-transform: uppercase;">Milestone
+		<div class="two"style="font-size: 34px;color: #e1e2e9;font-family: 'Quicksand';font-weight: 500;text-align: center;">2</div></div>
+		<div class="boxb3" style="position: relative; background-color:#fff; height:61px; width:270px; margin-left:21px;font-size: 16px;color: #363f45;font-family: 'Quicksand';font-weight: 500;text-align:center;text-transform: uppercase;">Milestone
+		<div class="three" style="font-size: 34px;color: #e1e2e9;font-family: 'Quicksand';font-weight: 500;text-align: center;">3</div></div>
+		<div class="boxb4" style="position: relative; background-color:#fff; height:61px; width:270px; margin-left:24px;font-size: 16px;color: #363f45;font-family: 'Quicksand';font-weight: 500;text-align:center;text-transform: uppercase;">milestone
+		<div class="four" style="font-size: 34px;color: #e1e2e9;font-family: 'Quicksand';font-weight: 500;text-align: center;">4</div></div>
+	</div>
+	<div class="bar" style="background-color:#f5f5f5; height:10px;margin-left: 22px;margin-right: 23px;width: 1153px;margin-top: 30px;">
+		<div class="colorbar" style="position:relative; width:300px; background-color:#d4c69b; height:6px;align:center;"></div>
+	</div>
+	<div class="block">
+	<div class="row1" style="position:relative;background-color: #fff;;height:57px; margin-left: 22px;width: 566px; margin-top: 38px;font-size: 16px;color: #363f45;font-family: 'Quicksand';font-weight: 500; text-align:left;display: inline-block">RECENT TASKS<img class="more-icon" src="images/more-icon.png" alt="more-icon"style="float:right"/>
+		
+	</div>	
+	<div class="row2" style="position:relative; background-color:#fff;height: 58px; margin-left: 22px;width: 566px; font-size: 14px;color: #919599;font-family: 'Lato';font-weight: 400;">Lorem Ipsum
+		<div class="dateinrow2" style="position:relative; margin-left: 453px;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">28
+			<div CLASS="monthinrow2" style="position:relative;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">March, 2018
+	
+	<div class="task2" style="position:relative;float: right;"><input type="checkbox" name="checkbox" value="checkbox"></div></div></div>
+	</div>
+	<div class="row3" style="position:relative; background-color:#fff;height: 57px; margin-left: 22px;width: 566px; font-size: 14px;color: #919599;font-family: 'Lato';font-weight: 400;background-color:  #e1f5e3;">Lorem Ipsum
+			<div class="dateinrow3" style="position:relative; margin-left: 453px;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color:  #e1f5e3;">28
+				<div CLASS="monthinrow3" style="position:relative;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color:  #e1f5e3;">March, 2018
+		
+		<div class="task3" style="position:relative;float: right;"><img src="images/checkbox-icon.png" alt="checkbox-icon"></div></div></div>
+	</div>
+	<div class="row4" style="position:relative; background-color:#fff;height: 56px; margin-left: 22px;width: 566px; font-size: 14px;color: #919599;font-family: 'Lato';font-weight: 400;">Lorem Ipsum
+			<div class="dateinrow4" style="position:relative; margin-left: 453px;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">28
+				<div CLASS="monthinrow4" style="position:relative;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">March, 2018
+		
+		<div class="task4" style="position:relative;float: right;"><input type="checkbox" name="checkbox" value="checkbox"></div></div></div>
+	</div>
+	<div class="row5" style="position:relative; background-color:#fff;height: 57px; margin-left: 22px;width: 566px; font-size: 14px;color: #919599;font-family: 'Lato';font-weight: 400;">Lorem Ipsum	
+		<div class="dateinrow5" style="position:relative; margin-left: 453px;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">28
+		<div CLASS="monthinrow5" style="position:relative;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">March, 2018
+		<div class="task5" style="position:relative;float: right;"><input type="checkbox" name="checkbox" value="checkbox"></div></div></div>
+	</div>
+	<div class="row6" style="position:relative; background-color:#fff;height: 60px; margin-left: 22px;width: 566px; font-size: 14px;color: #919599;font-family: 'Lato';font-weight: 400;">Lorem Ipsum
+		<div class="dateinrow6" style="position:relative; margin-left: 453px;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">28
+			<div CLASS="monthinrow6" style="position:relative;font-size: 13px;color: #919599;font-family: 'Lato';font-weight: 400;text-align: center;background-color: #ffffff;">March, 2018
+			<div class="task6" style="position:relative;float: right;"><input type="checkbox" name="checkbox" value="checkbox"></div></div></div>
+		</div>
+	<div class="table2"  style="position:relative; margin-left:609px; height: 57px; width:564px;font-size: 16px;color: #363f45;font-family: 'Quicksand';font-weight: 500;background-color: #fff;margin-top:-350px;"><div class="work" style="margin-left:29px;background-color:#fff;padding-top: 23px;">WORK STATUS		<img src="images/more-icon.png"alt="more-icon" style="float:right;">
+	</div>
+
+	</div>
+	<div class="bigblock" style="position: relative;margin-left:609px;  background-color:#fff;height: 284px; width:564px;margin-bottom:109px;">
+		<div style="font-size: 16px;color: #363f45;font-family: 'Lato';font-weight: 400;position: relative;background-color: #fff;margin-left: 31px;">LOREM IPSUM</div>
+		<div class="barinbigbox1withoutcolor" style="position:relative;width: 332px; height: 9px;border-radius: 4px;background-color: #e1e2e6; margin-right: 31px;margin-left: 199px;">
+		<div class="barinbigboxwithcolor" style="position:relative;width: 152px;height: 9px;border-radius: 4px;background-color: #5fccc1;"></div>
+		</div>
+		<div class="numberinbar" style="position:absolute;width: 32px;height: 25px;border-radius: 2px;background-color: #5fccc1;margin-left: 332px;font-size: 12px;color: #ffffff;font-family: 'Lato';font-weight: 400;">43%</div>
+	</div>
+	
+	<footer style="position:relative;height: 9px ;width:1180px;background-color:#384b59;font-size: 11px;color: #9caab4;font-family: 'Lato';font-weight: 400;text-align: right;text-transform: uppercase ;padding-bottom:17px;padding-top: 19px;padding-right: 18px;">
+		&copy; 2018 SPIRE CONSULTING GROUP. All rights reserved.
+	</footer>
+	</body>
+</html>
