@@ -43,8 +43,8 @@ h1{
 
 .yellowRectangle{
     background-color: #fec606;
-    height: 112px;
-    width: 179px;
+    max-height: 112px;
+    max-width: 179px;
     display: inline-block;
 }
 .budget{
@@ -81,8 +81,8 @@ h1{
 
 .pinkRectangle{
     background-color: #e81d62;
-    height: 112px;
-    width: 271px;
+    max-height: 112px;
+    max-width: 271px;
     margin-left: 114px;
     display: inline-block;
 }
@@ -118,8 +118,8 @@ h1{
 
 .greenRectangle{
     background-color: #8ac249;
-    height: 112px;
-    width: 271px;
+    max-height: 112px;
+    max-width: 271px;
     margin-left: 104px;
     margin-left:25px;
     display: inline-block;
@@ -151,4 +151,44 @@ h1{
 }
 .checklist-icon{
     background-color:#83b845;
+}
+
+.blueRectangle{
+    background-color: #2095f2;
+    max-height: 112px;
+    max-width: 271px;
+    margin-left: 104px;
+    margin-left:24px;
+    display: inline-block;
+}
+
+.documents{
+    background-color: #2095f2;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'QUICKSAND';
+    font-size: 16px;
+    margin-right: 151px;
+    margin-top:-100px
+}
+
+.two41{
+    background-color: #2095f2;
+    color:#fff;
+    font-family: 'QUICKSAND';
+    font-size: 30px;
+    margin-right: 151px;
+    margin-top: 45px;
+}
+
+.file-icon{
+    background-color: #1e8de6;
+    width: 95px;
+    height: 79px;
+    margin-left: 176px;
+    padding-top: 32px;
+}
+
+.fileicon{
+    background-color: inherit;
 }
