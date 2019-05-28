@@ -1,0 +1,154 @@
+@import "normalize.css";
+
+*{
+	padding:0px;
+    background-color: #ebecf2;
+	max-width:1198px;
+    max-height:1200px;
+    margin-left: 22px;
+}
+.header{
+    background-color: #384b59;
+}
+.top-right-icons{
+    background-color: #384b59;
+    padding-top: 20px;
+    float: right;
+
+}
+
+.imageinheader{
+    background-color: #384b59;
+    height: 67px;
+}
+h1{
+    text-transform:uppercase;
+    font-family:'QUICKSAND';
+    margin: 63px 0px 0px 60px;
+    font-size:  18px;
+}
+.search, .settings, .message{
+    margin-bottom: 22px; 
+}
+.logo, .menu, .search, .settings, .message{
+    background-color: #384b59;
+}
+.logo{
+    margin-top:5px;
+}
+.container1{
+    margin: 38px 0  0 22px;
+    display: inline-flex;
+}
+
+.yellowRectangle{
+    background-color: #fec606;
+    height: 112px;
+    width: 179px;
+    display: inline-block;
+}
+.budget{
+    background-color: #fec606;
+    color: white;
+    text-transform: uppercase;
+    font-family:'QUICKSAND';
+    font-size: 16px;
+    margin-left:18px ;
+    margin-right :88px;
+    margin-top: -103px; 
+
+}
+.dollar{
+    background-color: #f1b606;
+    margin-left:179px;
+    width: 26px;
+    height: 42px;
+    padding: 35px 32px 35px 33px;
+}
+.dollor{
+    background-color: #f1b606;
+    margin-left: 12px;
+}
+.number23M{
+    background-color: #fec606;
+    font-family:'QUICKSAND';
+    font-size: 30px;
+    color :#fff;
+    margin-right: 151px;
+    margin-top: 45px;
+    margin-left: 18px;
+}
+
+.pinkRectangle{
+    background-color: #e81d62;
+    height: 112px;
+    width: 271px;
+    margin-left: 114px;
+    display: inline-block;
+}
+.milestone{
+    background-color: #e81d62;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'QUICKSAND';
+    font-size: 16px;
+    margin-right: 151px;
+    margin-top:-100px
+}
+.twentyfour{
+    background-color: #e81d62;
+    color:#fff;
+    font-family: 'QUICKSAND';
+    font-size: 30px;
+    margin-right: 151px;
+    margin-top: 45px;
+
+}
+.graph{
+    background-color: #dc1c5d;
+    width: 95px;
+    height: 79px;
+    margin-left: 176px;
+    padding-top: 32px;
+    
+}
+.graph-icon{
+    background-color: #dc1c5d;
+}
+
+.greenRectangle{
+    background-color: #8ac249;
+    height: 112px;
+    width: 271px;
+    margin-left: 104px;
+    margin-left:25px;
+    display: inline-block;
+}
+.tasks{
+    background-color: #8ac249;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'QUICKSAND';
+    font-size: 16px;
+    margin-right: 151px;
+    margin-top:-100px
+}
+.onethree7{
+    background-color: #8ac249;
+    color:#fff;
+    font-family: 'QUICKSAND';
+    font-size: 30px;
+    margin-right: 151px;
+    margin-top: 45px;
+}
+.tasklist{
+    background-color: #83b845;
+    width: 95px;
+    height: 79px;
+    margin-left: 176px;
+    padding-top: 32px;
+    
+}
+.checklist-icon{
+    background-color:#83b845;
+}
