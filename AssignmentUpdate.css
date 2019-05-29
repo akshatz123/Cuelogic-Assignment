@@ -1,11 +1,10 @@
 @import "normalize.css";
 
-*{
-	padding:0px;
+.container1{
+    margin:auto;
     background-color: #ebecf2;
 	max-width:1198px;
     max-height:1200px;
-    margin-left: 22px;
 }
 .header{
     background-color: #384b59;
@@ -24,11 +23,12 @@
 h1{
     text-transform:uppercase;
     font-family:'QUICKSAND';
-    margin: 63px 0px 0px 60px;
+    margin: 63px 0px 0px 24px;
     font-size:  18px;
+    display: inline-block;
 }
 .search, .settings, .message{
-    margin-bottom: 22px; 
+    margin-bottom:auto; 
 }
 .logo, .menu, .search, .settings, .message{
     background-color: #384b59;
@@ -36,54 +36,56 @@ h1{
 .logo{
     margin-top:5px;
 }
-.container1{
+.container2{
     margin: 38px 0  0 22px;
     display: inline-flex;
 }
 
 .yellowRectangle{
-    background-color: #fec606;
-    max-height: 112px;
-    max-width: 179px;
+    background-color: #fec006;
+    height: 112px;
+    max-width: 271px;
+    margin-left: auto;
     display: inline-block;
 }
 .budget{
-    background-color: #fec606;
-    color: white;
+    background-color: #fec006;
+    color:#fff;
     text-transform: uppercase;
-    font-family:'QUICKSAND';
+    font-family: 'QUICKSAND';
     font-size: 16px;
-    margin-left:18px ;
-    margin-right :88px;
-    margin-top: -103px; 
-
+    margin-right: 151px;
+    margin-top:-100px;
+    margin-left:18px;
+}
+.number23M{
+    background-color: #fec006;
+    margin-left:18px;
+    color:#fff;
+    font-family: 'QUICKSAND';
+    font-size: 30px;
+    margin-right: 151px;
+    margin-top: 45px;
 }
 .dollar{
     background-color: #f1b606;
-    margin-left:179px;
-    width: 26px;
-    height: 42px;
-    padding: 35px 32px 35px 33px;
+    width: 95px;
+    height: 79px;
+    margin-left: 176px;
+    padding-top: 32px;
+    
 }
-.dollor{
+.doller-icon{
     background-color: #f1b606;
-    margin-left: 12px;
+    padding-left:23px;
 }
-.number23M{
-    background-color: #fec606;
-    font-family:'QUICKSAND';
-    font-size: 30px;
-    color :#fff;
-    margin-right: 151px;
-    margin-top: 45px;
-    margin-left: 18px;
-}
+
 
 .pinkRectangle{
     background-color: #e81d62;
     max-height: 112px;
     max-width: 271px;
-    margin-left: 114px;
+    margin-left: 22px;
     display: inline-block;
 }
 .milestone{
@@ -93,36 +95,38 @@ h1{
     font-family: 'QUICKSAND';
     font-size: 16px;
     margin-right: 151px;
-    margin-top:-100px
+    margin-top:-100px;
+    margin-left:18px;
 }
 .twentyfour{
     background-color: #e81d62;
     color:#fff;
     font-family: 'QUICKSAND';
     font-size: 30px;
-    margin-right: 151px;
+    margin-right: 212px;
     margin-top: 45px;
-
+    margin-left:18px;
 }
 .graph{
     background-color: #dc1c5d;
     width: 95px;
     height: 79px;
     margin-left: 176px;
-    padding-top: 32px;
-    
+    padding-top: 32px;    
 }
+
 .graph-icon{
     background-color: #dc1c5d;
+    padding-left:23px;
 }
 
 .greenRectangle{
     background-color: #8ac249;
     max-height: 112px;
     max-width: 271px;
-    margin-left: 104px;
     margin-left:25px;
     display: inline-block;
+
 }
 .tasks{
     background-color: #8ac249;
@@ -131,7 +135,8 @@ h1{
     font-family: 'QUICKSAND';
     font-size: 16px;
     margin-right: 151px;
-    margin-top:-100px
+    margin-top:-100px;
+    margin-left: 18px;
 }
 .onethree7{
     background-color: #8ac249;
@@ -140,6 +145,7 @@ h1{
     font-size: 30px;
     margin-right: 151px;
     margin-top: 45px;
+    margin-left: 18px;
 }
 .tasklist{
     background-color: #83b845;
@@ -151,13 +157,13 @@ h1{
 }
 .checklist-icon{
     background-color:#83b845;
+    padding-left:23px;
 }
 
 .blueRectangle{
     background-color: #2095f2;
     max-height: 112px;
     max-width: 271px;
-    margin-left: 104px;
     margin-left:24px;
     display: inline-block;
 }
@@ -169,7 +175,8 @@ h1{
     font-family: 'QUICKSAND';
     font-size: 16px;
     margin-right: 151px;
-    margin-top:-100px
+    margin-top:-100px;
+    margin-left: 18px;
 }
 
 .two41{
@@ -177,8 +184,9 @@ h1{
     color:#fff;
     font-family: 'QUICKSAND';
     font-size: 30px;
-    margin-right: 151px;
+    margin-right: 1545.8px;
     margin-top: 45px;
+    margin-left: 18px;
 }
 
 .file-icon{
@@ -191,4 +199,237 @@ h1{
 
 .fileicon{
     background-color: inherit;
+    padding-left:23px;
+}
+.arrow-right-icon{
+    margin-left: 1015px;
+    float:right;
+}
+.container3{
+    margin-top: 38px;
+    display:inline-flex;
+}
+.whiteboxes2{
+    display:inline-flex;
+}
+.boxa1{
+    margin-top: 5px;
+    margin-left:22px;
+    background-color:#fff;
+    height:166px;
+    width:272px;
+}
+
+.boxb1{
+    display:inline-flex;
+    margin-left:22px;
+    margin-top:5px;
+    background-color:#fff; 
+    height:61px; 
+    width:270px;
+    top: 20px;
+}
+.boxa2{
+    background-color:#fff; 
+    height:166px; 
+    width:272px; 
+    margin-left:22px;
+margin-top: 5px;
+}
+.boxb2{
+    display:inline-flex;
+    margin-left:22px;
+    margin-top:5px;
+    background-color:#fff; 
+    height:61px; 
+    width:270px;
+}
+.one{
+    margin: 17px 19px 17px -44px;
+    font-size: 34px;
+    color: #e1e2e9;
+    font-family: 'Quicksand';
+}
+.boxa3{
+    margin-top: 5px;
+    margin-left:22px;
+    background-color:#fff;
+    height:166px;
+    width:272px;
+}
+.boxb3{
+    display:inline-flex;
+    margin-left:22px;
+    margin-top:5px; 
+    height:61px; 
+    width:270px;
+    background-color: #fff;    
+}
+.boxa4{
+    margin-top: 5px;
+    background-color:#fff; 
+    height:166px; 
+    width:272px; 
+    margin-left:22px;
+    background-color: #fff;
+}
+.boxb4{
+    margin-left:22px;
+    margin-top:5px;
+    height:61px; 
+    width:270px;
+    background-color: #fff;
+    display:inline-flex
+}
+footer{
+    height: 9px ;
+    width:1180px;
+    background-color:#384b59;
+    font-size: 11px;
+    color: #9caab4;
+    font-family: 'Lato';
+    text-align: right;
+    text-transform: uppercase ;
+    padding-bottom:17px;
+    padding-top: 19px;
+    padding-right: 18px;
+}
+.whiteboxmilestone{
+    font-size: 16px;
+    padding: 10px 10px;
+    color: #363f45;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    padding:25px 93px 23px 93px;
+}
+.bar{
+    margin-top: 30px;
+    margin-left:28px;
+    width: 1153px;
+    height: 10px;
+    margin-right:23px;
+    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.c1-outer{
+    border-radius: 50%;
+    border-color:#000;
+    border-width:2px;
+    margin:28px 85px 26px 75px;
+    border-style: solid;
+    width:112px;
+    height:112px;
+    background-color: #8ac249;    
+}
+.c1-inner{
+    border-radius: 50%;
+    border-color:#000;
+    border-width:2px;
+    margin:8px 10px 10px 8px;
+    border-style: solid;
+    width:93px;
+    height:93px;
+    background-color:#f6efd2;
+}
+.percent{
+    text-align: center;
+    font-family: "LATO";
+    font-size: 30px;
+    margin:26px 117px 51px 15px;
+}
+.colorbar{
+    width:300px;
+    background-color:#d4c69b;
+    height:6px;
+    text-align:center;
+    border-radius: 2px; 
+
+}
+.c1-inner-empty{
+    margin:29px 10px 10px 79px;
+    border-radius: 50%;
+    width:93px;
+    height:91px;
+    background-color:#f6efd2;
+}
+.c2-outer{
+    margin:29px 10px 10px 79px;
+    background-color: #fec006;
+    width: 106px;
+    height: 109px;
+    border-radius: 50%;
+}
+.c3-number{
+    text-align: center;
+    font-family: "LATO";
+    font-size: 30px;
+    margin:26px 117px 51px 15px;
+    padding: 20px;
+}
+.c1-inner-empty{
+    text-align: center;
+    font-family: "LATO";
+    font-size: 30px;
+    margin:5px 12px 51px 15px;
+    padding:20px; 
+}
+.bottom{
+    margin-top: 91px;
+}
+box1{
+    width:566px;
+    height: 341px;
+    background-color: #fff;
+}
+.row1{
+    width: 566px;
+    height: 57px;
+    font-family: 'quicksand';
+    font-size: 16px;
+    margin-left: 31px;
+    text-transform: uppercase;
+    background-color: #fff;
+padding-top:23px;
+padding-left:22px;}
+.more-icon{
+   margin: 12px;
+    float :right;
+}
+.row2{
+    width: 566px;
+    height: 57px;
+    font-family: 'lato';
+    font-size: 14px;
+    margin-left: 31px;
+    text-transform: uppercase;
+    background-color: #fff;
+padding-top:23px;
+padding-left:22px;
+    background-color:#e1f5e3;
+}
+.row3{
+    width: 566px;
+    height: 56px;
+    font-family: 'quicksand';
+    font-size: 14px;
+    margin-left: 31px;
+    text-transform: uppercase;
+    background-color: #fff;
+padding-top:23px;
+padding-left:22px;
+}
+.date-in-row{
+    float: right;
+    margin-right:66px;
+    margin-top:16px;
+    margin-bottom:16px;
+    font-family: 'lato';
+    font-size: 13px;
+}
+.checkbox-icon{
+    float: right;
+    margin-right:31px;
+    margin-top:21px;
+    margin-bottom:22px;
 }
