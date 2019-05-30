@@ -54,7 +54,6 @@ h1{
     
 }
 .search-hover{
-    padding-right: 21px;
     background-color: #4a5b68;
     padding-top:9px;
     padding-bottom: 12px;
@@ -241,6 +240,7 @@ padding-top: 32px;
     top: 5px;
 }
 .one{
+    float:right;
     font-size: 34px;
     color: #e1e2e9;
     font-family: 'Quicksand';
@@ -279,7 +279,7 @@ footer{
     color: #363f45;
     font-family: 'Quicksand';
     text-transform: uppercase;
-    padding:12px 88px 23px 93px;
+    padding:12px 60px 5px 104px;
     display: inline-block;
 }
 .bar{
@@ -317,7 +317,7 @@ footer{
     text-align: center;
     font-family: "LATO";
     font-size: 30px;
-    margin:26px 117px 51px 15px;
+    margin:26px 20px 51px 15px;
 }
 .colorbar{
     width:300px;
@@ -330,25 +330,28 @@ footer{
 }
 .c2-inner{
     border-radius: 50%;
-    border-width:.5px;
+    border-width:2px;
     margin:8px 10px 10px 8px;
-    border-style: solid;
+    border-style: groove;
     width:93px;
     height:93px;
     background-color:#f6efd2;
 }
 .c2-outer{
-    margin:29px 10px 10px 79px;   
-    width: 106px;
     background-color: #fec606;
-    height: 111px;
     border-radius: 50%;
+    border-color:#eff7e6;
+    border-width:2px;
+    margin:28px 85px 26px 75px;
+    border-style: groove;
+    width:112px;
+    height:112px;
 }
 .c3-inner{
     border-radius: 50%;
     border-width:2px;
     margin:46px 10px 10px 79px;
-    border-style: solid;
+    border-style: groove;
     width:93px;
     height:93px;
     background-color:#f6efd2;
@@ -357,7 +360,7 @@ footer{
     border-radius: 50%;
     border-width:2px;
     margin:46px 10px 10px 79px;
-    border-style: solid;
+    border-style: groove;
     width:93px;
     height:93px;
     background-color:#f6efd2;
