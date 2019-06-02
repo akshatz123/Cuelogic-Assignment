@@ -1,9 +1,10 @@
 @import "normalize.css";
 
 .container1{
+    clear: both;
     margin:auto;
     background-color: #ebecf2;
-	width:1198px;
+	max-width:1198px;
     height:1200px;
 }
 .header{
@@ -15,24 +16,7 @@
     float: right;
 
 }
-.w4-container{
-    padding:.5em 16px;
-   
-}
-.w1-round-xlarge{
-    border-radius: 16px;
-    width: 43%;
-}
-.w4-light-grey{
-    background-color: #e1e2e6;
 
-    width: 100%;
-    height:17%;
-}
-.w4-blue{
-    height:10%;
-    background-color: #5fccc1;
-}
 .imageinheader{
     background-color: #384b59;
     height: 80px;
@@ -44,25 +28,27 @@ h1{
     font-size:  18px;
 }
 .search, .settings, .message{
-    margin-bottom:auto; 
+    margin-bottom:auto;
+    display: inline-block;
 }
-.logo, .menu, .search, .settings, .message{
+.settings{
+    padding-bottom: 10px;
+}
+.logo{
+    padding:20px;
+}
+.logo, .menu, .search  .settings, .message{
     background-color: #384b59;
-    padding-top:9px;
-    padding-bottom: 12px;
-    padding-left: 12px;
+    padding-bottom: 5px;
+    padding-left: 5px;
 
 }
 .logo{
     padding-top:5px;
-
 }
 .message{
-    padding-right: 133px;
-    padding-top:9px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-
+    padding:9px 128px 12px 12px;
+    float:left;
 }
 .round{
     position: absolute;
@@ -71,19 +57,19 @@ h1{
     width: 19px;
     height:20px;
     margin-left:26px;
-
+    padding: 2px;
 }
 .settings{
     padding-right: 71px;
 }
 
 .search-hover{
-    margin-right: 10px;
-    background-color: #4a5b68;
-    padding-top:9px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right:10px;
+    margin:10px 10px;
+}
+
+.search:hover{
+    background-color: #4a5b68;  
+    margin:20px 10px;
 }
 .container2{
     margin: 38px 0  0 22px;
@@ -93,7 +79,7 @@ h1{
 .yellowRectangle{
     background-color: #fec006;
     height: 112px;
-    max-width: 271px;
+    width: 271px;
     margin-left: auto;
     display: inline-block;
 }
@@ -103,6 +89,7 @@ h1{
     font-family: 'QUICKSAND';
     font-size: 16px;
     padding-left:18px;
+    padding-top:10px;
 }
 .number23M{
     margin-left:18px;
@@ -119,17 +106,14 @@ h1{
 }
 .doller-icon{
     background-color: #f1b606;
-    padding-top: 32px;    
-    padding-bottom:33px; 
-    padding-left:23px;
-    padding-right:28px;
+    padding:32px 28px 33px 23px;
 }
 
 
 .pinkRectangle{
     background-color: #e81d62;
-    max-height: 112px;
-    max-width: 271px;
+    height: 112px;
+    width: 271px;
     margin-left: 22px;
     display: inline-block;
 }
@@ -140,14 +124,15 @@ h1{
     font-size: 16px;
     padding-right: 151px;
     padding-left:18px;
+    padding-top:10px;
 }
 .twentyfour{
     color:#fff;
     font-family: 'QUICKSAND';
     font-size: 30px;
-    padding-right: 151px;
     padding-top: 45px;
     padding-left:18px;
+    float:left;
 }
 .graph{
     width: 95px;
@@ -156,20 +141,16 @@ h1{
 }
 
 .graph-icon{
-    padding-top: 32px;    
-    padding-bottom:33px; 
-    padding-left:23px;
-    padding-right:28px;
+    padding: 32px 28px 33px 23px;    
     background-color: #dc1c5d;
 }
 
 .greenRectangle{
     background-color: #8ac249;
-    max-height: 112px;
-    max-width: 271px;
+    height: 112px;
+    width: 271px;
     margin-left:25px;
     display: inline-block;
-
 }
 .tasks{
     color:white;
@@ -177,65 +158,57 @@ h1{
     font-family: 'QUICKSAND';
     font-size: 16px;
     padding-left: 18px;
+    padding-top:10px;
 }
 .onethree7{
     color:#fff;
     font-family: 'QUICKSAND';
     font-size: 30px;
-    padding-right: 151px;
     padding-top: 45px;
-    padding-left: 18px;
+    padding-left:18px;
 }
 .tasklist{
     width: 95px;
     height: 80px;
-    margin-left: 176px;
+    float:right;
 }
 .checklist-icon{
-    padding-bottom:33px; 
-    padding-left:23px;
-    padding-right:28px;
+    padding:32px 28px 33px 23px; 
     background-color: #83b845;
-    padding-top: 32px;
 }
 
 .blueRectangle{
     background-color: #2095f2;
-    max-height: 112px;
-    max-width: 271px;
+    height: 112px;
+    width: 271px;
     margin-left:24px;
     display: inline-block;
 }
-
 .documents{
     color:white;
     text-transform: uppercase;
     font-family: 'QUICKSAND';
     font-size: 16px;
-    margin-right: 151px;
     margin-left: 18px;
+    padding-top:10px;
 }
 
 .two41{
     color:#fff;
     font-family: 'QUICKSAND';
     font-size: 30px;
-    padding-right: 151px;
+    float:left;
     padding-top: 45px;
     padding-left: 18px;
 }
 .file-icon{
     width: 95px;
     height: 80px;
-    margin-left: 176px;
+    float:right;
 }
-
 .fileicon{
     background-color: #1e8de6;
-    padding-bottom:33px; 
-    padding-left:23px;
-    padding-right:28px;
-    padding-top: 32px;
+    padding: 32px 28px 33px 23px ;
 }
 .arrow-right-icon{
     padding-right:30px;
@@ -261,7 +234,6 @@ h1{
     height:227px;
     width:272px;
 }
-
 .boxa2{
     background-color:#fff; 
     height:227px; 
@@ -272,9 +244,10 @@ h1{
 .one{
     float:right;
     font-size: 34px;
+    margin-right:22px;
     color: #e1e2e9;
     font-family: 'Quicksand';
-    display:inline-flex;
+    display:inline;
 }
 .boxa3{
     top: 5px;
@@ -291,35 +264,34 @@ h1{
     margin-left:22px;
 }
 footer{
-    height: 9px ;
-    width:1180px;
+    padding-bottom:109px;
+    height: 45px;
+    width:1198px;
     background-color:#384b59;
     font-size: 11px;
     color: #9caab4;
     font-family: 'Lato';
     text-align: right;
-    text-transform: uppercase ;
-    padding-bottom:17px;
+    text-transform: uppercase;
+    clear: both;
+    padding-bottom: 17px;
     padding-top: 19px;
     padding-right: 18px;
-    
-    margin: auto;
-    }
+}
 .whiteboxmilestone{
     font-size: 16px;
-    padding: 10px 10px;
     color: #363f45;
     font-family: 'Quicksand';
     text-transform: uppercase;
-    padding:12px 60px 5px 104px;
+    margin:15px 46px 23px 95px;
     display: inline-block;
 }
 .bar{
-    border-radius: 2px;
+    border-radius: 50%;
     margin-top: 30px;
     margin-left:28px;
     width: 1153px;
-    height: 10px;
+    max-height: 10px;
     margin-right:23px;
     border-radius: 20px;
     background-color: #fff;
@@ -331,8 +303,8 @@ footer{
     border-radius: 50%;
     border-color:#eff7e6;
     border-width:2px;
+    border-style:groove;
     margin:28px 85px 26px 75px;
-    border-style: groove;
     width:112px;
     height:112px;
     background-color: #8ac249;    
@@ -356,6 +328,7 @@ footer{
     width:300px;
     background-color:#d4c69b;
     height:6px;
+    border-radius: 50%;
     text-align:center;
     border-radius: 2px; 
     margin-top:2px;
@@ -380,28 +353,49 @@ footer{
     width:112px;
     height:112px;
 }
+.c3-outer{
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    border-color:#eff7e6;
+    border-width:2px;
+    margin:28px 85px 26px 75px;
+    border-style: groove;
+    width:112px;
+    height:112px;
+}
+
 .c3-inner{
     border-radius: 50%;
     border-width:2px;
-    margin:46px 10px 10px 79px;
+    margin:8px 10px 10px 8px;
     border-style: groove;
     width:93px;
     height:93px;
     background-color:#f6efd2;
 }
+.c4-outer{
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    border-color:#eff7e6;
+    border-width:2px;
+    margin:28px 85px 26px 75px;
+    border-style: groove;
+    width:112px;
+    height:112px;
+}
+
 .c4-inner{
     border-radius: 50%;
     border-width:2px;
-    margin:46px 10px 10px 79px;
+    margin:8px 10px 10px 8px;
     border-style: groove;
-    width:93px;
-    height:93px;
+    max-width:93px;
+    max-height:93px;
     background-color:#f6efd2;
 }
 .bottom{
     margin-top:60px;
     padding-left: 22px;
-    margin-bottom: 109px;
 }
 box1{
     height: 341px;
@@ -488,4 +482,58 @@ td{
 .w3-round-xlarge{
     border-radius: 16px;
     width: 32%;
+}
+.w4-container{
+    padding:.5em 16px;
+   
+}
+.w1-round-xlarge{
+    border-radius: 16px;
+    width: 43%;
+}
+.w4-light-grey{
+    background-color: #e1e2e6;
+    width: 100%;
+    height:17%;
+    border-radius: 16px;
+}
+.w4-blue{
+    height:10%;
+    background-color: #5fccc1;
+}
+.menu:hover{
+    background-color:#4a5b68;
+    padding-top:5px;
+    padding-right:5px;
+}
+.number1{
+    position: absolute;
+    top: 57pc;
+    right:355px;
+    width:34px;
+    height:25px;
+    background-color: #5fccc1;
+}
+.four3{
+    color: #fff;
+    font-family: 'LATO';
+    font-size: 12px;
+    text-align:center;
+    display:inline;
+}
+.number2{
+    position: absolute;
+    right:298px;
+    top:63pc;
+    width:34px;
+    height:25px;
+    background-color: #5fccc1;
+}
+.number3{
+    position: absolute;
+    width:34px;
+    height:25px;
+    background-color: #5fccc1;
+    top:1092px;
+    right:411px;
 }
