@@ -1,11 +1,11 @@
 @import "normalize.css";
-
+@import "reset.css";
 .container1{
     clear: both;
     margin:auto;
     background-color: #ebecf2;
-	max-width:1198px;
-    height:1200px;
+	width:1198px;
+    height:1309px;
 }
 .header{
     background-color: #384b59;
@@ -264,8 +264,7 @@ h1{
     margin-left:22px;
 }
 footer{
-    padding-bottom:109px;
-    height: 45px;
+    height: 19px;
     width:1198px;
     background-color:#384b59;
     font-size: 11px;
@@ -273,10 +272,10 @@ footer{
     font-family: 'Lato';
     text-align: right;
     text-transform: uppercase;
-    clear: both;
     padding-bottom: 17px;
     padding-top: 19px;
-    padding-right: 18px;
+    float: right;
+    margin-top: 120px;
 }
 .whiteboxmilestone{
     font-size: 16px;
@@ -452,24 +451,18 @@ table{
     float: left;
     margin-left: 1pc;
     height: 373px;
+    text-align: center;
 }
-
 td{
+    margin-bottom:5px;
     font-family: 'lato';
     font-size: 13px;
-    text-align: center;
+    
 }
 .text{
     text-align: center;
 }
-.table2{
-    background-color:#fff;
-    height: 284px;
-    width:564px;
-    margin-left:610px; 
-    float: right;
-    text-align: left;
-}
+
 .row22{
     text-align: left;   
     width: 30%;
@@ -508,8 +501,8 @@ td{
 }
 .number1{
     position: absolute;
-    top: 57pc;
-    right:355px;
+    top: 838px;
+    right:251px;
     width:34px;
     height:25px;
     background-color: #5fccc1;
@@ -523,8 +516,8 @@ td{
 }
 .number2{
     position: absolute;
-    right:298px;
-    top:63pc;
+    right:193px;
+    top:928px;
     width:34px;
     height:25px;
     background-color: #5fccc1;
@@ -534,6 +527,67 @@ td{
     width:34px;
     height:25px;
     background-color: #5fccc1;
-    top:1092px;
-    right:411px;
+    top:1019px;
+    right:297px;
+}
+th{
+    text-align:left;
+    margin-bottom: 10px;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    margin-left:52px;
+    padding-left:10px;  
+}
+.col1{
+    text-align: left;
+    padding-left:10px;
+    margin-bottom: 10px;
+}
+.number1:after{
+    top:100%;
+    left:50%;
+    width:50%;
+    height:50%;
+    position: absolute;
+    background-color: #5fccc1;
+    border-top:0px solid #5fccc1;
+    border-right: 2px solid #5fccc1;
+    border-bottom: 2px solid #5fccc1;
+    border-left:0px solid #5fccc1;
+    margin-top:-8px;
+    transform: rotate(45deg);
+    margin-left:  -11px;
+    content:"";
+}
+.number2:after{
+    content: "";
+    top:100%;
+    left:50%;
+    width:50%;
+    height:50%;
+    position: absolute;
+    background-color: #5fccc1;
+    border-top:0px solid #5fccc1;
+    border-right: 2px solid #5fccc1;
+    border-bottom: 2px solid #5fccc1;
+    border-left:0px solid #5fccc1;
+    margin-top:-8px;
+    transform: rotate(45deg);
+    margin-left:  -11px;
+}
+.number3::after{
+    content: "";
+    top:100%;
+    left:50%;
+    width:50%;
+    height:50%;
+    position: absolute;
+    background-color: #5fccc1;
+    border-top:0px solid #5fccc1;
+    border-right: 2px solid #5fccc1;
+    border-bottom: 2px solid #5fccc1;
+    border-left:0px solid #5fccc1;
+    margin-top:-8px;
+    transform: rotate(45deg);
+    margin-left:  -11px;
 }
