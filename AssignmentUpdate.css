@@ -13,6 +13,7 @@
 .top-right-icons{
     background-color: #384b59;
     float: right;
+    margin-right: 300px;
 }
 
 .imageinheader{
@@ -25,51 +26,28 @@ h1{
     padding: 63px 0px 0px 24px;
     font-size:  18px;
 }
-.search, .settings, .message{
-    display: inline-block;
-}
 .logo{
     padding:20px;
 }
-.logo, .menu, .search  .settings, .message{
+.logo, .menu{
     background-color: #384b59;;
 
 }
-.message{
-    float:left
-}
-.round{
-    position: absolute;
-    border-radius: 50%;
-    background-color: #fe5621;
-    width: 19px;
-    height:20px;
-    margin-left:26px;
-    padding: 2px;
-}
-.settings{
-    float:right;
-    margin-right:50px;
-}
 
-.search-hover{
-    margin:10px ;
-}
-
-.search:hover{
-    background-color: #4a5b68;  
-    margin:20px 10px;
-}
-.container2{
+/*.container2{
+   
+    display: inline;
+}*/
+.block1{
+    width: 1198px;
+    height:120px;
     margin: 38px 0  0 22px;
-    display: inline-flex;
+    display:inline-block;
 }
-
 .yellowRectangle{
     background-color: #fec006;
     height: 112px;
     width: 271px;
-    margin-left: auto;
     display: inline-block;
 }
 .budget{
@@ -85,7 +63,6 @@ h1{
     color:#fff;
     font-family: 'QUICKSAND';
     font-size: 30px;
-    padding-right: 185px;
     padding-top: 45px;
 }
 .dollar{
@@ -103,7 +80,7 @@ h1{
     background-color: #e81d62;
     height: 112px;
     width: 271px;
-    margin-left: 22px;
+    margin-left: 24px;
     display: inline-block;
 }
 .milestone{
@@ -111,7 +88,6 @@ h1{
     text-transform: uppercase;
     font-family: 'QUICKSAND';
     font-size: 16px;
-    padding-right: 151px;
     padding-left:18px;
     padding-top:10px;
 }
@@ -121,7 +97,6 @@ h1{
     font-size: 30px;
     padding-top: 45px;
     padding-left:18px;
-    float:left;
 }
 .graph{
     width: 95px;
@@ -129,10 +104,7 @@ h1{
     float: right;
     background-color: #dc1c5d;
 }
-.yellowbox{
-    width:179px;
-    height:112px;
-}
+
 
 .graph-icon{
     background-color: #dc1c5d;
@@ -143,7 +115,7 @@ h1{
     background-color: #8ac249;
     height: 112px;
     width: 271px;
-    margin-left:25px;
+    margin-left:20px;
     display: inline-block;
 }
 .tasks{
@@ -163,9 +135,10 @@ h1{
 }
 .tasklist{
     width: 95px;
-    height: 80px;
+    height: 112px;
     float:right;
 }
+
 .checklist-icon{
     padding:32px 28px 33px 23px; 
     background-color: #83b845;
@@ -175,8 +148,9 @@ h1{
     background-color: #2095f2;
     height: 112px;
     width: 271px;
-    margin-left:24px;
     display: inline-block;
+    float: right;
+    margin-right:35px;
 }
 .documents{
     color:white;
@@ -197,12 +171,28 @@ h1{
 }
 .file-icon{
     width: 95px;
-    height: 80px;
+    height: 112px;
     float:right;
 }
 .fileicon{
     background-color: #1e8de6;
     padding: 32px 28px 33px 23px ;
+}
+.yellowbox{
+    width:179px;
+    height:112px;
+}
+.pinkbox{
+    width:179px;
+    height:112px;
+}
+.greenbox{
+    width:179px;
+    height:112px;
+}
+.bluebox{
+    width:179px;
+    height:112px;
 }
 .arrow-right-icon{
     padding-right:30px;
@@ -302,10 +292,10 @@ footer{
     border-radius: 50%;
     border-width:2px;
     margin:9px 9px;
-    display:inline-block;
     width:93px;
     height:93px;
     background-color:#f6efd2;
+    display:inline-block;
 }
 .percent{
     text-align: center;
@@ -354,10 +344,10 @@ footer{
     border-radius: 50%;
     border-width:2px;
     margin:9px 9px;
-    display:inline-block;
     width:93px;
     height:93px;
     background-color:#f6efd2;
+    display:inline-block;
 }
 .c4-outer{
     background-color:#f6efd2;
@@ -373,10 +363,10 @@ footer{
     border-radius: 50%;
     border-width:2px;    
     margin:9px 9px;
-    display:inline-block;
     width:93px;
     max-height:93px;
     background-color:#f6efd2;
+    display:inline-block;
 }
 .bottom{
     margin-top:60px;
@@ -410,7 +400,7 @@ box1{
     margin-right:66px;
     margin-top:16px;
     margin-bottom:16px;
-    font-family: 'lato';
+    font-family: 'lato';block
     font-size: 13px;
 }
 .checkbox-icon{
@@ -454,7 +444,7 @@ td{
     width: 32%;
 }
 .w4-container{
-    padding:.1em 16px;
+    padding:0.5em 16px;
    
 }
 .w1-round-xlarge{
@@ -465,7 +455,7 @@ td{
     position:relative;
     background-color: #e1e2e6;
     width: 100%;
-    height:17%;
+    height:0.5em;
     border-radius: 16px;
 }
 .w4-blue{
@@ -519,7 +509,9 @@ th{
 }
 .col1{
     text-align: left;
-    padding-left:10px;
+    padding-left:31px;
+    padding-top:23px;
+    padding-bottom:20px;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
@@ -594,9 +586,10 @@ th{
     border-top:1px solid #ebecf2 ;
 }
 .table1rows{
-    margin:10px;
+    padding-top: 24px;
+    padding-left: 31px;
+    padding-bottom: 20px;
     text-align: left;
     font-family: 'lato';
     font-size: 13px;
-
 }
