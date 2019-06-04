@@ -4,22 +4,20 @@
     clear: both;
     margin:auto;
     background-color: #ebecf2;
-	width:1198px;
-    height:1309px;
+    width:1198px;
+    height: 1309px;
 }
 .header{
     background-color: #384b59;
 }
 .top-right-icons{
     background-color: #384b59;
-    padding-top: 22px;
     float: right;
-
 }
 
 .imageinheader{
     background-color: #384b59;
-    height: 80px;
+    
 }
 h1{
     text-transform:uppercase;
@@ -28,27 +26,17 @@ h1{
     font-size:  18px;
 }
 .search, .settings, .message{
-    margin-bottom:auto;
     display: inline-block;
-}
-.settings{
-    padding-bottom: 10px;
 }
 .logo{
     padding:20px;
 }
 .logo, .menu, .search  .settings, .message{
-    background-color: #384b59;
-    padding-bottom: 5px;
-    padding-left: 5px;
+    background-color: #384b59;;
 
 }
-.logo{
-    padding-top:5px;
-}
 .message{
-    padding:9px 128px 12px 12px;
-    float:left;
+    float:left
 }
 .round{
     position: absolute;
@@ -60,11 +48,12 @@ h1{
     padding: 2px;
 }
 .settings{
-    padding-right: 71px;
+    float:right;
+    margin-right:50px;
 }
 
 .search-hover{
-    margin:10px 10px;
+    margin:10px ;
 }
 
 .search:hover{
@@ -101,7 +90,7 @@ h1{
 }
 .dollar{
     width: 95px;
-    height: 80px;
+    height: 112px;
     float: right;
 }
 .doller-icon{
@@ -136,13 +125,18 @@ h1{
 }
 .graph{
     width: 95px;
-    height: 80px;
+    height: 112px;
     float: right;
+    background-color: #dc1c5d;
+}
+.yellowbox{
+    width:179px;
+    height:112px;
 }
 
 .graph-icon{
-    padding: 32px 28px 33px 23px;    
     background-color: #dc1c5d;
+    padding:32px 28px 33px 23px;
 }
 
 .greenRectangle{
@@ -222,10 +216,6 @@ h1{
 
 .container3{
     padding-top: 38px;
-    display:inline-flex;
-}
-.whiteboxes2{
-    display:inline-flex;
 }
 .boxa1{
     top: 5px;
@@ -233,6 +223,7 @@ h1{
     background-color:#fff;
     height:227px;
     width:272px;
+    display: inline-block;
 }
 .boxa2{
     background-color:#fff; 
@@ -240,6 +231,7 @@ h1{
     width:272px; 
     margin-left:22px;
     top: 5px;
+    display: inline-block;
 }
 .one{
     float:right;
@@ -255,6 +247,7 @@ h1{
     background-color:#fff;
     height:227px;
     width:272px;
+    display: inline-block;
 }
 .boxa4{
     top: 5px;
@@ -262,6 +255,7 @@ h1{
     height:227px; 
     width:272px; 
     margin-left:22px;
+    display: inline-block;
 }
 footer{
     height: 19px;
@@ -286,15 +280,12 @@ footer{
     display: inline-block;
 }
 .bar{
-    border-radius: 50%;
+    border-radius: 50px;
     margin-top: 30px;
     margin-left:28px;
     width: 1153px;
-    max-height: 10px;
     margin-right:23px;
-    border-radius: 20px;
     background-color: #fff;
-    border-radius: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
@@ -302,7 +293,6 @@ footer{
     border-radius: 50%;
     border-color:#eff7e6;
     border-width:2px;
-    border-style:groove;
     margin:28px 85px 26px 75px;
     width:112px;
     height:112px;
@@ -311,8 +301,8 @@ footer{
 .c1-inner{
     border-radius: 50%;
     border-width:2px;
-    margin:8px 10px 10px 8px;
-    border-style: groove;
+    margin:9px 9px;
+    display:inline-block;
     width:93px;
     height:93px;
     background-color:#f6efd2;
@@ -336,11 +326,11 @@ footer{
 .c2-inner{
     border-radius: 50%;
     border-width:2px;
-    margin:8px 10px 10px 8px;
-    border-style: groove;
+    margin:9px 9px;
     width:93px;
     height:93px;
     background-color:#f6efd2;
+    display: inline-block;
 }
 .c2-outer{
     background-color: #fec606;
@@ -348,17 +338,14 @@ footer{
     border-color:#eff7e6;
     border-width:2px;
     margin:28px 85px 26px 75px;
-    border-style: groove;
     width:112px;
     height:112px;
 }
 .c3-outer{
-    background-color: #f5f5f5;
+    background-color: #f6efd2;
     border-radius: 50%;
     border-color:#eff7e6;
-    border-width:2px;
     margin:28px 85px 26px 75px;
-    border-style: groove;
     width:112px;
     height:112px;
 }
@@ -366,29 +353,28 @@ footer{
 .c3-inner{
     border-radius: 50%;
     border-width:2px;
-    margin:8px 10px 10px 8px;
-    border-style: groove;
+    margin:9px 9px;
+    display:inline-block;
     width:93px;
     height:93px;
     background-color:#f6efd2;
 }
 .c4-outer{
-    background-color: #f5f5f5;
+    background-color:#f6efd2;
     border-radius: 50%;
     border-color:#eff7e6;
     border-width:2px;
     margin:28px 85px 26px 75px;
-    border-style: groove;
     width:112px;
     height:112px;
 }
 
 .c4-inner{
     border-radius: 50%;
-    border-width:2px;
-    margin:8px 10px 10px 8px;
-    border-style: groove;
-    max-width:93px;
+    border-width:2px;    
+    margin:9px 9px;
+    display:inline-block;
+    width:93px;
     max-height:93px;
     background-color:#f6efd2;
 }
@@ -430,18 +416,9 @@ box1{
 .checkbox-icon{
     float: right;
     margin-right:10px;
-    margin-top:21px;
     margin-bottom:22px;
 }
-.rectangle{
-    width: 18px;
-    height: 19px;
-    margin-right: 10px;
-    margin-top: 19px;
-    margin-bottom: 20px;
-    border: .5px solid #000;
-    float: right;
-}
+
 table{
     font-family: 'quicksand';
     font-size: 16px;
@@ -464,7 +441,6 @@ td{
 }
 
 .row22{
-    text-align: left;   
     width: 30%;
     padding:20px;
 }
@@ -472,12 +448,13 @@ td{
     border-radius: 16px;
     width: 58%;
 }
+  
 .w3-round-xlarge{
     border-radius: 16px;
     width: 32%;
 }
 .w4-container{
-    padding:.5em 16px;
+    padding:.1em 16px;
    
 }
 .w1-round-xlarge{
@@ -485,6 +462,7 @@ td{
     width: 43%;
 }
 .w4-light-grey{
+    position:relative;
     background-color: #e1e2e6;
     width: 100%;
     height:17%;
@@ -501,11 +479,11 @@ td{
 }
 .number1{
     position: absolute;
-    top: 838px;
-    right:251px;
+    left:172px;
     width:34px;
     height:25px;
     background-color: #5fccc1;
+    bottom:27px;
 }
 .four3{
     color: #fff;
@@ -516,8 +494,8 @@ td{
 }
 .number2{
     position: absolute;
-    right:193px;
-    top:928px;
+    right:122px;
+    bottom:31px;
     width:34px;
     height:25px;
     background-color: #5fccc1;
@@ -527,8 +505,8 @@ td{
     width:34px;
     height:25px;
     background-color: #5fccc1;
-    top:1019px;
-    right:297px;
+    bottom:27px;
+    right:229px;
 }
 th{
     text-align:left;
@@ -536,18 +514,20 @@ th{
     font-family: 'Quicksand';
     font-size: 16px;
     margin-left:52px;
-    padding-left:10px;  
+    padding-left:10px;
+    text-transform:uppercase;  
 }
 .col1{
     text-align: left;
     padding-left:10px;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 .number1:after{
     top:100%;
     left:50%;
     width:50%;
-    height:50%;
+    height:23%;
     position: absolute;
     background-color: #5fccc1;
     border-top:0px solid #5fccc1;
@@ -580,7 +560,7 @@ th{
     top:100%;
     left:50%;
     width:50%;
-    height:50%;
+    height:23%;
     position: absolute;
     background-color: #5fccc1;
     border-top:0px solid #5fccc1;
@@ -590,4 +570,33 @@ th{
     margin-top:-8px;
     transform: rotate(45deg);
     margin-left:  -11px;
+}
+.percentage{
+    font-size:16px;
+    font-family: 'lato';
+    text-align:center;
+}
+.check{
+    width: 18px;
+    height: 19px;
+    background-color: #fff;
+}
+.boxb42{
+    border-top:1px solid #ebecf2 ;
+}
+.boxb32{
+    border-top:1px solid #ebecf2 ;
+}
+.boxb22{
+    border-top:1px solid #ebecf2 ;
+}
+.boxb12{
+    border-top:1px solid #ebecf2 ;
+}
+.table1rows{
+    margin:10px;
+    text-align: left;
+    font-family: 'lato';
+    font-size: 13px;
+
 }
