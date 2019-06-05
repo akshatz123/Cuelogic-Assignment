@@ -42,6 +42,8 @@ h1{
     height: 112px;
     width: 271px;
     display: inline-block;
+    margin-top: 20px;
+    margin-left:22px;
 }
 .budget{
     color:#fff;
@@ -143,6 +145,7 @@ h1{
     width: 271px;
     float: right;
     margin-right:35px;
+    margin-top: 20px;
 }
 .documents{
     color:white;
@@ -222,6 +225,7 @@ h1{
     color: #e1e2e9;
     font-family: 'Quicksand';
     display:inline;
+    padding-top: 7px;
 }
 .boxa3{
     top: 5px;
@@ -353,13 +357,14 @@ footer{
     border-width:2px;    
     margin:9px 9px;
     width:93px;
-    max-height:93px;
+    height:93px;
     background-color:#f6efd2;
     display:inline-block;
 }
 .bottom{
     margin-top:60px;
     padding-left: 22px;
+    background-color: #ebecf2;
 }
 box1{
     height: 341px;
@@ -425,6 +430,7 @@ td{
     width: 30%;
     padding:20px;
     text-transform: none;
+    padding-top: 41px;
     border:none;
 }
 .w2-round-xlarge{
@@ -604,7 +610,7 @@ th{
     margin-top:21px;
     display:inline-block;
 }
-
+/*
 .search:hover{
     background-color:#4a5b68;
     padding:10px;
@@ -616,8 +622,8 @@ th{
 .message:hover{
     background-color:#4a5b68;
     padding:10px;
-}   
-.round{
+}*/
+/*.round{
     position: absolute;
     width: 19px;
     height: 20px;
@@ -628,13 +634,10 @@ th{
 }
 .number6{
     padding:5px 6px;
-}
+}*/
 .tablewithoutborder{
     border:none;
 }
 .heading{
     border-bottom:2px solid #ebecf2;
-}
-.headingwithreducedheight{
-    height:17px;
 }
