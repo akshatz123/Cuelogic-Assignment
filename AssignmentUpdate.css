@@ -2,9 +2,13 @@
 @import "reset.css";
 header{
     margin:auto;
+    height:60px;
     width:1200px;
     background-color: #ebecf2;
     
+}
+.menu{
+    margin-left:60px;
 }
 .container1{
     clear: both;
@@ -25,11 +29,12 @@ header{
 }
 h1{
     text-transform:uppercase;
-    font-family:'QUICKSAND';
+    font-family:quicksand;
     font-size:  18px;
 }
 .logo{
-    padding:20px;
+    padding:9px;
+    margin-left: 24px;
 }
 .logo, .menu{
     background-color: #384b59;;
@@ -49,7 +54,7 @@ h1{
 .budget{
     color:#fff;
     text-transform: uppercase;
-    font-family: 'QUICKSAND';
+    font-family: quicksand;
     font-size: 16px;
     padding-left:18px;
     padding-top:10px;
@@ -58,7 +63,7 @@ h1{
     width: 270px;
     margin-left:18px;
     color:#fff;
-    font-family: 'QUICKSAND';
+    font-family: quicksand;
     font-size: 30px;
     padding-top: 45px;
 }
@@ -70,8 +75,8 @@ h1{
     margin: 0 auto;
 }
 .doller-icon{
-    text-align: center;
-    margin:31px 30px;
+    display: block;
+    margin:31px auto;
 }
 
 
@@ -108,7 +113,7 @@ h1{
 .block2{
     float:left;
     margin: 0 24px;
-    padding-top: 55px;
+    padding-top: 99px;
     padding-bottom:31px; 
     background-color: #ebecf2;
 }
@@ -143,27 +148,27 @@ h1{
     font-size: 34px;
     margin-right:21px;
     color: #e1e2e9;
-    font-family: 'Quicksand';
+    font-family: quicksand;
 }
 
 footer{
     width:1187px;
+    height:13px;
     background-color:#384b59;
     font-size: 11px;
     color: #9caab4;
-    font-family: 'Lato';
+    font-family: lato;
     text-align: right;
     text-transform: uppercase;
-    padding-bottom: 17px;
-    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-top: 15px;
     float: right;
-    margin-top: 120px;
     padding-right: 13px;
 }
 .whiteboxmilestone{
     font-size: 16px;
     color: #363f45;
-    font-family: 'Quicksand';
+    font-family: quicksand;
     text-transform: uppercase;
     text-align: center;
     padding-top:25px;
@@ -195,7 +200,7 @@ footer{
 }
 .percent{
     text-align: center;
-    font-family: "Quicksand";
+    font-family: quicksand;
     font-size: 30px;
     margin:26px auto;
 }
@@ -228,7 +233,7 @@ footer{
     background-color:#f6efd2;
 }
 .block3{
-    padding-top:59px;
+    padding-top:31px;
     background-color: #ebecf2;
     clear: left;
 }
@@ -240,7 +245,7 @@ footer{
     float:right;
 }
 .row2{
-    font-family: 'lato';
+    font-family: lato;
     font-size: 13px;
     text-transform: uppercase;
     background-color:#e1f5e3;
@@ -248,21 +253,12 @@ footer{
     color: #1e3620;
     padding-top: 24px;
 }
-.date-in-row{
-    float: right;
-    margin-right:66px;
-    margin-top:16px;
-    margin-bottom:16px;
-    font-family: 'lato';
-    font-size:13px;
-}
 .checkbox-icon{
     float: right;;
     margin-right:30px;    
 }
-table{
-    width:43%;
-    font-family: 'quicksand';
+.table{
+    font-family: quicksand;
     margin-left:24px;
     font-size: 16px;
     width: 564px;
@@ -272,9 +268,12 @@ table{
     text-align:left;
     border-bottom:1px solid #ebecf2;
 }
+
+
+
 td{
     margin-bottom:5px;
-    font-family: 'lato';
+    font-family: lato;
     font-size: 13px;
     text-transform: none;
     border-bottom: 1px solid #ebecf2;
@@ -292,28 +291,28 @@ td{
 }
 
 .menu:hover{
-    padding:5px;
     background-color:#4a5b68;
 }
 .number1{
     position: absolute;
     left:133px;
     width:24px;
-    height:15px;
     background-color: #5fccc1;
     bottom:24px;
+    padding:2px;
 }
 .four3{
     color: #fff;
-    font-family: 'LATO';
+    font-family: lato;
     font-size: 12px;
     text-align:left;
     right:15px;
+
 }
 th{
 
     text-align:left;
-    font-family: 'Quicksand';
+    font-family: quicksand;
     font-size: 16px;
 }
 .col1{
@@ -327,9 +326,9 @@ th{
 .number1:after{
     content:"";
     top:100%;
-    left:87%;
-    min-width: 41%;
-    min-height: 51%;
+    left:80%;
+    width: 41%;
+    height: 51%;
     position: absolute;
     background-color: #5fccc1;
     border-top:0px solid #5fccc1;
@@ -338,15 +337,15 @@ th{
     border-left:0px solid #5fccc1;
     margin-top:-5px;
     transform: rotate(45deg);
-    margin-left:  -15px;
+    margin-left:  -13px;
 }
 
 .number3::after{
     content: "";
     top:100%;
     left:87%;
-    min-width: 41%;
-    min-height: 51%;
+    width: 41%;
+    height: 51%;
     position: absolute;
     background-color: #5fccc1;
     border-top:0px solid #5fccc1;
@@ -359,7 +358,7 @@ th{
 }
 .percentage{
     font-size:16px;
-    font-family: 'lato';
+    font-family: lato;
     text-align:center;
 }
 .check{
@@ -370,20 +369,18 @@ th{
     margin-right: 30px;
 }   
 .boxb12{
-    width:inherit;
     border-top:1px solid #ebecf2 ;
 }
 .table1rows{
     padding-left: 30px;
     padding-top: 24px;
     text-align: left;
-    font-family: 'lato';
+    font-family: lato;
     font-size: 13px;
     text-transform: initial;
-    text-align: left;
 }
-
 .message{
+    position: relative;
     margin-right:53px;
     margin-top:21px;
     float:left;
@@ -418,15 +415,16 @@ th{
     height: 20px;
     background-color: #fe5621;
     top: 9px;
-    right: 315px;
+    right: 205px;
     border-radius: 50%;
 }
 .number6{
     padding:5px 6px;
+    color:#fff;
 }
 .heading{
     margin-top:20px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-bottom:1px solid #ebecf2;
 }
 .boxa11{
@@ -436,20 +434,24 @@ th{
 
 .date{
     text-align: center;
-    font-family: 'lato';
+    padding-bottom: 7px;
+    font-family: lato;
     font-size: 13px;
     color: #919599;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .block4{
+    padding-top:69px;
     background-color: #ebecf2;
-    height:440px;
-    float:inherit;
-}
+}   
 .h2{
+    font-family: quicksand;
+    font-size: 16px;
     min-width:534px;
     background-color: #fff;
-    padding-top:18px;
-    padding-bottom:17px;
+    padding-top:30px;
+    padding-bottom:20px;
     border-bottom: 1px solid #E6E7ED;
     text-transform: uppercase;  
     float:right;
@@ -458,8 +460,8 @@ th{
 }
 
 .onel{ 
-    padding-top:47px;
-    font-family: 'lato';
+    padding-top:77px;
+    font-family: lato;
     font-size: 16px;
     float: right;
     min-width:564px;
@@ -468,11 +470,11 @@ th{
     text-align: center;
 }
 .twol{
-    padding-top: 67px;
+    padding-top: 99px;
 }
 .threel{
-    padding-top:65px;
-    padding-bottom:60px;
+    padding-top:80px;
+    padding-bottom:128px;
 }
 .progressbar{
     border-radius:5px;
@@ -494,18 +496,17 @@ th{
     float:right;
     margin-right: 25px;
 }
-.number3{
+.number3{ 
     position: absolute;
     left:96px;
-    width:24px;
     height:15px;
     background-color: #5fccc1;
     bottom:27px;
+    padding:5px;
 }
 .number2{
     position: absolute;
     left:172px;
-    width:24px;
     height:15px;
     background-color: #5fccc1;
     bottom:27px;
@@ -526,5 +527,11 @@ th{
 .table_heading{
     padding-left:30px;
     padding-top:20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+}
+.block5{
+    background-color: #ebecf2;
+    padding-top: 109px;
+    float: none;
+    clear:both;
 }
