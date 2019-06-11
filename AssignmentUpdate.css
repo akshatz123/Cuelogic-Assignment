@@ -176,12 +176,11 @@ footer{
 .bar{
     padding-top: 2px;
     padding-bottom: 2px;
-    border-radius: 5px;
-    margin:31px 24px;
+    border-radius: 50px;
+    margin:0 24px;
     background-color: #fff;
     height:9px;
     clear: left;
-    margin-bottom: 53px;
 }
 .c1-outer{
     border-radius: 50%;
@@ -257,27 +256,7 @@ footer{
     float: right;;
     margin-right:30px;    
 }
-.table{
-    font-family: quicksand;
-    margin-left:24px;
-    font-size: 16px;
-    width: 564px;
-    text-transform: uppercase;
-    background-color: #fff;
-    float: left;
-    text-align:left;
-    border-bottom:1px solid #ebecf2;
-}
 
-
-
-td{
-    margin-bottom:5px;
-    font-family: lato;
-    font-size: 13px;
-    text-transform: none;
-    border-bottom: 1px solid #ebecf2;
-}
 .text{
     text-align: center;
 }
@@ -290,16 +269,13 @@ td{
     border:none;
 }
 
-.menu:hover{
-    background-color:#4a5b68;
-}
 .number1{
     position: absolute;
-    left:133px;
+    left:131px;
     width:24px;
     background-color: #5fccc1;
     bottom:24px;
-    padding:2px;
+    padding:5px;
 }
 .four3{
     color: #fff;
@@ -309,53 +285,48 @@ td{
     right:15px;
 
 }
-th{
-
-    text-align:left;
-    font-family: quicksand;
-    font-size: 16px;
-}
-.col1{
-    text-align: left;
-    padding-left:31px;
-    padding-top:23px;
-    padding-bottom:20px;
-    margin-bottom: 10px;
-    text-transform: initial;
+.number2:after{
+    color:#5fccc1;;
+    border-left: 20px solid;
+    border-top: 13px solid transparent;
+    border-bottom: 20px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 9px;
+    transform: rotate(90deg);
+    width:0px;
 }
 .number1:after{
     content:"";
-    top:100%;
-    left:80%;
-    width: 41%;
-    height: 51%;
+    color:#5fccc1;;
+    border-left: 12px solid;
+    border-top: 10px solid transparent;
+    border-bottom:9px solid transparent;
+    display: inline-block;
+    content: '';
     position: absolute;
-    background-color: #5fccc1;
-    border-top:0px solid #5fccc1;
-    border-right: 2px solid #5fccc1;
-    border-bottom: 2px solid #5fccc1;
-    border-left:0px solid #5fccc1;
-    margin-top:-5px;
-    transform: rotate(45deg);
-    margin-left:  -13px;
+    left: 12px;
+    top: 15px;
+    transform: rotate(90deg);
+    width:0px;
 }
 
 .number3::after{
-    content: "";
-    top:100%;
-    left:87%;
-    width: 41%;
-    height: 51%;
+    color:#5fccc1;;
+    border-left: 13px solid;
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    display: inline-block;
+    content: '';
     position: absolute;
-    background-color: #5fccc1;
-    border-top:0px solid #5fccc1;
-    border-right: 2px solid #5fccc1;
-    border-bottom: 2px solid #5fccc1;
-    border-left:0px solid #5fccc1;
-    margin-top:-5px;
-    transform: rotate(45deg);
-    margin-left:  -15px;
-}
+    left: 11px;
+    top: 13px;
+    transform: rotate(90deg);
+    width:0px;
+
+}   
 .percentage{
     font-size:16px;
     font-family: lato;
@@ -373,7 +344,6 @@ th{
 }
 .table1rows{
     padding-left: 30px;
-    padding-top: 24px;
     text-align: left;
     font-family: lato;
     font-size: 13px;
@@ -432,15 +402,6 @@ th{
 }
 
 
-.date{
-    text-align: center;
-    padding-bottom: 7px;
-    font-family: lato;
-    font-size: 13px;
-    color: #919599;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
 .block4{
     padding-top:69px;
     background-color: #ebecf2;
@@ -450,17 +411,17 @@ th{
     font-size: 16px;
     min-width:534px;
     background-color: #fff;
-    padding-top:30px;
-    padding-bottom:20px;
     border-bottom: 1px solid #E6E7ED;
     text-transform: uppercase;  
     float:right;
     margin:0 24px;
     padding-left:30px;
+    padding-top:18px;
+    padding-bottom: 17px;
 }
 
 .onel{ 
-    padding-top:77px;
+    padding-top:50px;
     font-family: lato;
     font-size: 16px;
     float: right;
@@ -470,11 +431,11 @@ th{
     text-align: center;
 }
 .twol{
-    padding-top: 99px;
+    padding-top: 41px;
 }
 .threel{
-    padding-top:80px;
-    padding-bottom:128px;
+    padding-top:41px;
+    padding-bottom:56px;
 }
 .progressbar{
     border-radius:5px;
@@ -498,7 +459,7 @@ th{
 }
 .number3{ 
     position: absolute;
-    left:96px;
+    left:89px;
     height:15px;
     background-color: #5fccc1;
     bottom:27px;
@@ -506,7 +467,7 @@ th{
 }
 .number2{
     position: absolute;
-    left:172px;
+    left:167px;
     height:15px;
     background-color: #5fccc1;
     bottom:27px;
@@ -524,14 +485,85 @@ th{
     top:3px;
     left: 0px;
 }
-.table_heading{
-    padding-left:30px;
-    padding-top:20px;
-    padding-bottom: 30px;
-}
+
 .block5{
     background-color: #ebecf2;
     padding-top: 109px;
     float: none;
     clear:both;
 }
+th{
+    font-family: quicksand;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 18px 0px 17px 30px;
+    text-transform: uppercase;
+}    
+td{
+    margin-bottom:5px;
+    font-family: lato;
+    font-size: 13px;
+    text-transform: none;
+    border-bottom: 1px solid #ebecf2;
+}
+.table{
+    font-family: quicksand;
+    margin-left:24px;
+    font-size: 16px;
+    width: 564px;
+    text-transform: uppercase;
+    background-color: #fff;
+    float: left;
+    text-align:left;
+    border-bottom:1px solid #ebecf2;
+}
+.date{
+    text-align: center;
+    padding-bottom: 7px;
+    font-family: lato;
+    font-size: 13px;
+    color: #919599;
+}
+.td{
+    padding-top: 8px;
+    padding-left: 30px;
+    color: #919599; 
+    padding-bottom: 20px;
+}
+tr{
+    border-top:1px solid #ebecf2;
+
+}
+.row1{
+    padding-top: 8px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-family: lato;
+    font-size:14px;
+}
+.row21{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+.row3{
+    padding-top: 8px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    font-family: lato;
+    font-size:14px;
+}
+.row4{
+    padding-top: 11px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    font-family: lato;
+    font-size:14px;
+}
+.row5{
+    padding-top: 8px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    font-family: lato;
+    font-size:14px;
+}   
