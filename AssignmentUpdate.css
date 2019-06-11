@@ -5,7 +5,6 @@ header{
     height:60px;
     width:1200px;
     background-color: #ebecf2;
-    
 }
 .menu{
     margin-left:60px;
@@ -545,6 +544,7 @@ tr{
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 19px;
+    color:#4BAE4F
 }
 
 .row5{
