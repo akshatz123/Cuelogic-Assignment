@@ -1,7 +1,5 @@
-@import "normalize.css";
-@import "reset.css";
 .header{
-    margin:auto;
+    margin:0 auto;
     height:60px;
     width:1200px;
     background-color: #ebecf2;
@@ -31,7 +29,7 @@ h1{
     text-transform:uppercase;
     font-family:quicksand;
     font-size:  18px;
-    font-weight: 500
+    font-weight: 500;
 }
 .logo{
     padding:9px;
@@ -61,6 +59,7 @@ h1{
     font-size: 16px;
     padding-left:18px;
     padding-top:10px;
+    font-weight:500;
 }
 .number23M{
     margin-left:18px;
@@ -68,6 +67,7 @@ h1{
     font-family: quicksand;
     font-size: 30px;
     padding-top: 45px;
+    font-weight: 500;
 }
 .dollar{
     height: 110px;
@@ -77,8 +77,7 @@ h1{
     margin: 0 auto;
 }
 .doller-icon{
-   display: block;
-    margin:31px auto;
+    margin:31px 25px;;
 }
 
 
@@ -109,7 +108,6 @@ h1{
 
 .yellowbox{
     width:179px;
-
     margin-bottom: -110px;
 }
 
@@ -218,7 +216,6 @@ footer{
     margin-bottom:2px;
     margin-left:2px;
 }
-
 .c2-outer{
     background-color: #fec606;
 }
@@ -245,6 +242,7 @@ footer{
     float: right;
 }
 .more-icon-bottom{
+    margin- bottom:20px;
     margin-right:39px;
     float:right;
 }
@@ -288,7 +286,7 @@ footer{
     font-size: 12px;
     text-align:left;
     right:15px;
-font-weight:500;
+    font-weight:500;
 }
 .number2:after{
     border-left: 20px solid #5fccc1;
@@ -349,7 +347,6 @@ font-weight:500;
     font-size: 13px;
     text-transform: initial;
 }
-
 .message{
     padding:5px;
     position: relative;
@@ -372,15 +369,12 @@ padding:5px;
  
 .search:hover{
     background-color:#4a5b68;
-    padding:5px;
 
 }
  .settings:hover{
     background-color:#4a5b68;
-    padding:5px
 }
 .message:hover{
-
     background-color:#4a5b68;
 }
 
@@ -404,8 +398,6 @@ padding:5px;
 .boxa11{
     height:166px;
 }
-
-
 .block4{
     padding-top:69px;
     background-color: #ebecf2;
@@ -424,7 +416,6 @@ padding:5px;
     padding-bottom: 17px;
     font-weight: 900;
 }
-
 .onel{ 
     padding-top:52px;
     font-family: lato;
@@ -476,7 +467,6 @@ padding:5px;
     height:15px;
     background-color: #5fccc1;
     bottom:27px;
-
 }
 .progressbar1{
     top:3px;
@@ -490,18 +480,20 @@ padding:5px;
     top:3px;
     left: 0px;
 }
-
 .block5{
     background-color: #ebecf2;
     padding-top: 109px;
     clear:both;
 }
-th{
+.th{
     font-family: quicksand;
     font-size: 16px;
     background-color: #fff;
-    padding: 18px 0px 17px 30px;
+    padding-top:18px;
+    padding-bottom: 17px;
+    padding-left: 30px;
     text-transform: uppercase;
+    border-bottom: 1px solid #ebecf2;
 }    
 td{
     margin-bottom:5px;
@@ -520,7 +512,6 @@ td{
     float: left;
     text-align:left;
     border-bottom:1px solid #ebecf2;
-
 }
 .date{
     text-align: center;
@@ -538,7 +529,6 @@ td{
 }
 tr{
     border-top:1px solid #ebecf2;
-
 }
 .row1{
     padding-top: 20px;
