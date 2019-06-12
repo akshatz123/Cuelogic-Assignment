@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "reset.css";
-header{
+.header{
     margin:auto;
     height:60px;
     width:1200px;
