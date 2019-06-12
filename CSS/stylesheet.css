@@ -327,6 +327,7 @@
     font-weight: 500;
 }
 .check{
+    border-bottom:1px solid #ebecf2;
     vertical-align: middle;
     width: 17;
     height: 17px;
@@ -345,7 +346,7 @@
     text-transform: initial;
 }
 
-.message{
+ .message{
     margin-right:42px;
     margin-top:15px;
     margin-bottom: 5px;
@@ -359,11 +360,11 @@
     margin-right:20px;
     margin-top:12px;
     margin-bottom: 5px;
-}
+} 
  
-.top-right-icons a:hover{
-    background-color:#4a5b68;
-}
+/* a:hover{
+    box-shadow:1px 1px 1px #4a5b68;
+} */
 .round{
     position: absolute;
     width: 19px;
@@ -506,15 +507,13 @@
     font-size: 13px;
     color: #919599;
     font-weight: 300;
-}
+    }
 td{
     padding-top: 8px;
     padding-left: 30px;
     color: #919599; 
     padding-bottom: 20px;
-}
-tr{
-    border-top:1px solid #ebecf2;
+    border-bottom:1px solid #ebecf2;
 }
 .row1{
     color: #919599;
@@ -553,10 +552,22 @@ tr{
 .positionrelative{
     position: relative;
 }
-
 .titleofblock1{
     font-family: Quicksand;
     font-weight: 500;
     font-size: 18px;
     text-transform: uppercase;
+}
+table td{
+    border-bottom: 1px solid #ebecf2;
+}
+absposition{
+    padding-top:10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-right:24px;
+}
+a.absposition:hover{
+    background-color:#7e8d97;
 }
