@@ -3,7 +3,6 @@
     height:60px;
     width:1200px;
     background-color: #ebecf2;
-    
 }
 .menu{
     margin-left:60px;
@@ -13,23 +12,23 @@
     background-color: #ebecf2;
     width:1200px;
 }
-.header{
-    background-color: #384b59;
-}
+/* .header{ */
+    /* background-color: #384b59; */
+/* } */
 .top-right-icons{
     background-color: #384b59;
-    float: right;
+    float: right; 
 }
 
 .imageinheader{
     background-color: #384b59;
 
 }
-.h1{
+.titleofblock2{
     text-transform:uppercase;
     font-family:quicksand;
     font-size:  18px;
-    font-weight: 900;
+    font-weight:500;
 }
 .logo{
     padding:9px;
@@ -71,12 +70,11 @@
 .dollar{
     height: 110px;
     float: right;
-    width: 95px;
+    width: 90px;
     background-color: #f1b606;
-    margin: 0 auto;
 }
 .doller-icon{
-    margin:31px 25px;;
+    transform: translate(50%, 50%);
 }
 
 
@@ -144,12 +142,12 @@
 }
 .one{
     font-weight: 700;
-    padding-top: 10px;
     float:right;
     font-size: 34px;
-    margin-right:21px;
+    margin-right:22px;
     color: #e1e2e9;
     font-family: quicksand;
+    padding-top: 10px;
 }
 
 .footer{
@@ -170,9 +168,10 @@
     color: #363F45;
     font-family: quicksand;
     text-transform: uppercase;
-    text-align: center;
-    margin:20px 91px;
     font-weight:400;
+    padding-top: 20px;
+    padding-left:91px;
+
 }
 .bar{
     padding-top: 2px;
@@ -199,11 +198,11 @@
     border:2px solid #fff;
 }
 .percent{
-    text-align: center;
     font-family: quicksand;
     font-size: 30px;
-    margin:26px auto;
+    padding:26px;
     font-weight: 500;
+    text-align: center;
 }
 .progresscolorbar{
     width:26%;
@@ -211,9 +210,6 @@
     height:5px;
     text-align:center;
     border-radius: 2px; 
-    margin-top:2px;
-    margin-bottom:2px;
-    margin-left:2px;
 }
 
 .c2-outer{
@@ -249,7 +245,7 @@
 .row2{
     font-family: lato;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform:none;
     background-color:#e1f5e3;
     padding-left:30px;
     color: #1e3620;
@@ -274,10 +270,10 @@
 
 .number1{
     position: absolute;
-    right:176px;
+    right:-9%;
     width:24px;
     background-color: #5fccc1;
-    bottom:24px;
+    bottom:242%;
     padding:5px;
 }
 .four3{
@@ -286,7 +282,7 @@
     font-size: 12px;
     text-align:left;
     right:15px;
-font-weight:500;
+    font-weight:500;
 }
 .number2:after{
     border-left: 20px solid #5fccc1;
@@ -331,6 +327,7 @@ font-weight:500;
     font-weight: 500;
 }
 .check{
+    vertical-align: middle;
     width: 17;
     height: 17px;
     background-color: #fff;
@@ -349,43 +346,31 @@ font-weight:500;
 }
 
 .message{
-    padding:5px;
-    position: relative;
     margin-right:42px;
-    margin-top:12px;
-    float:left;
+    margin-top:15px;
+    margin-bottom: 5px;
 }
 .settings{
-    padding:5px;
     margin-right:32px;
     margin-top:12px;
-    float:left;
+    margin-bottom: 5px;
 }
 .search{
-padding:5px;
     margin-right:20px;
     margin-top:12px;
-    float: left;
+    margin-bottom: 5px;
 }
  
-.search:hover{
-    background-color:#4a5b68;
-
-}
- .settings:hover{
+.top-right-icons a:hover{
     background-color:#4a5b68;
 }
-.message:hover{
-    background-color:#4a5b68;
-}
-
 .round{
     position: absolute;
     width: 19px;
     height: 20px;
     background-color: #fe5621;
-    top: 4px;
-    right: 205px;;
+    top: 0px;
+    right: 29px;
     border-radius: 50%;
     color:#fff;
     text-align: center;
@@ -405,10 +390,10 @@ padding:5px;
     padding-top:69px;
     background-color: #ebecf2;
 }   
-.h2{
+.titleofdiv{
     font-family: quicksand;
     font-size: 16px;
-    min-width:534px;
+    width:534px;
     background-color: #fff;
     border-bottom: 1px solid #E6E7ED;
     text-transform: uppercase;  
@@ -418,13 +403,14 @@ padding:5px;
     padding-top:18px;
     padding-bottom: 17px;
     font-weight: 900;
+    padding-left:30px;
 }
 
 .onel{ 
     padding-top:52px;
     font-family: lato;
     font-size: 16px;
-    float: right;
+    float: right; 
     min-width:534px;
     padding-left: 30px;
     background-color: #fff;
@@ -444,14 +430,13 @@ padding:5px;
     background-color: #E1E2E6;
     height: 9px;
     float:right;
-    position: relative;
     margin-right:40px;
 }
 .coloredprogressbar{
     border-radius: 5px;
     background-color: #5fccc1;
     height:9px;
-    
+    position: relative;
 }
 .more-icon-bottom-right{
     float:right;
@@ -459,18 +444,18 @@ padding:5px;
 }
 .number3{ 
     position: absolute;
-    right:215px;
+    right:-11%;
     height:15px;
     background-color: #5fccc1;
-    bottom:27px;
+    bottom:210%;
     padding:5px;
 }
 .number2{
     position: absolute;
-    right:132px;
+    right:-6%;
     height:15px;
     background-color: #5fccc1;
-    bottom:27px;
+    bottom:200%;
 
 }
 .progressbar1{
@@ -491,7 +476,7 @@ padding:5px;
     padding-top: 109px;
     clear:both;
 }
-.th{
+.table_heading{
     font-family: quicksand;
     font-size: 16px;
     background-color: #fff;
@@ -502,13 +487,6 @@ padding:5px;
     border-bottom: 1px solid #ebecf2;
     font-weight: 900;
 }    
-td{
-    margin-bottom:5px;
-    font-family: lato;
-    font-size: 13px;
-    text-transform: none;
-    border-bottom: 1px solid #ebecf2;
-}
 .table{
     font-family: quicksand;
     margin-left:24px;
@@ -527,9 +505,9 @@ td{
     font-family: lato;
     font-size: 13px;
     color: #919599;
-    font-weight: 400;
+    font-weight: 300;
 }
-.td{
+td{
     padding-top: 8px;
     padding-left: 30px;
     color: #919599; 
@@ -537,15 +515,15 @@ td{
 }
 tr{
     border-top:1px solid #ebecf2;
-
 }
 .row1{
+    color: #919599;
+    text-transform: none;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
     font-family: lato;
     font-size:14px;
-    font-weight:400;
     font-weight:400;
 }
 .row21{
@@ -560,13 +538,25 @@ tr{
     padding-bottom: 20px;
     padding-left: 30px;
     font-family: lato;
+    text-transform: none;
     font-size:14px;
 }
 .progressbarfullwidth{
+    padding-left:2px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 50px;
     margin:0 24px;
     background-color: #fff;
-    min-height:9px;
+    height:5px;
+}
+.positionrelative{
+    position: relative;
+}
+
+.titleofblock1{
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
 }
