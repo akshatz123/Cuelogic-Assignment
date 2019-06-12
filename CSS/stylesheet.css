@@ -13,7 +13,9 @@
     background-color: #ebecf2;
     width:1200px;
 }
-
+.header{
+    background-color: #384b59;
+}
 .top-right-icons{
     background-color: #384b59;
     float: right;
@@ -27,7 +29,7 @@
     text-transform:uppercase;
     font-family:quicksand;
     font-size:  18px;
-    font-weight: 500;
+    font-weight: 900;
 }
 .logo{
     padding:9px;
@@ -57,7 +59,6 @@
     font-size: 16px;
     padding-left:18px;
     padding-top:10px;
-    font-weight:500;
 }
 .number23M{
     margin-left:18px;
@@ -214,6 +215,7 @@
     margin-bottom:2px;
     margin-left:2px;
 }
+
 .c2-outer{
     background-color: #fec606;
 }
@@ -240,7 +242,7 @@
     float: right;
 }
 .more-icon-bottom{
-    margin- bottom:20px;
+    padding-top:20px;
     margin-right:39px;
     float:right;
 }
@@ -284,7 +286,7 @@
     font-size: 12px;
     text-align:left;
     right:15px;
-    font-weight:500;
+font-weight:500;
 }
 .number2:after{
     border-left: 20px solid #5fccc1;
@@ -345,6 +347,7 @@
     font-size: 13px;
     text-transform: initial;
 }
+
 .message{
     padding:5px;
     position: relative;
@@ -396,6 +399,8 @@ padding:5px;
 .boxa11{
     height:166px;
 }
+
+
 .block4{
     padding-top:69px;
     background-color: #ebecf2;
@@ -414,6 +419,7 @@ padding:5px;
     padding-bottom: 17px;
     font-weight: 900;
 }
+
 .onel{ 
     padding-top:52px;
     font-family: lato;
@@ -465,6 +471,7 @@ padding:5px;
     height:15px;
     background-color: #5fccc1;
     bottom:27px;
+
 }
 .progressbar1{
     top:3px;
@@ -478,6 +485,7 @@ padding:5px;
     top:3px;
     left: 0px;
 }
+
 .block5{
     background-color: #ebecf2;
     padding-top: 109px;
@@ -492,6 +500,7 @@ padding:5px;
     padding-left: 30px;
     text-transform: uppercase;
     border-bottom: 1px solid #ebecf2;
+    font-weight: 900;
 }    
 td{
     margin-bottom:5px;
@@ -510,6 +519,7 @@ td{
     float: left;
     text-align:left;
     border-bottom:1px solid #ebecf2;
+
 }
 .date{
     text-align: center;
@@ -527,6 +537,7 @@ td{
 }
 tr{
     border-top:1px solid #ebecf2;
+
 }
 .row1{
     padding-top: 20px;
