@@ -44,7 +44,9 @@
     background-color: #ebecf2;
     margin: 0 24px;
     padding-top: 43px;
+;
 }
+
 .yellowRectangle{
     margin-top:36px;
     background-color: #fec006;
@@ -75,9 +77,10 @@
     float: right;
     width: 90px;
     background-color: #f1b606;
+    text-align: center;
 }
 .doller-icon{
-    transform: translate(50%, 65%);
+    padding-top: 32px;
 }
 
 
@@ -116,7 +119,7 @@
     padding-top: 99px;
     padding-bottom:31px; 
     background-color: #ebecf2;
-    clear: both;
+    float: left;
 }
 
 .arrow-right-icon{
@@ -172,8 +175,7 @@
     font-family: lato;
     text-transform: uppercase;
     font-weight:400;
-    padding-top: 20px;
-    padding-left:91px;
+    padding: 20px 91px 0;
 
 }
 .bar{
@@ -186,24 +188,25 @@
 }
 .c1-outer{
     border-radius: 50%;
+    padding:10px;
     margin:28px auto;
     width:111px;
     height:111px;
-    background-color: #8ac249;    
+    background-color: #8ac249;
+    box-sizing: border-box;    
 }
 .c1-inner{
     border-radius: 50%;
-    margin:8px;
-    width:91px;
-    height:91px;
+    margin-top:0px;
+    width:87px;
+    height:87px;
     background-color:#f6efd2;
-    float: left;
     border:2px solid #fff;
 }
 .percent{
     font-family: quicksand;
     font-size: 30px;
-    padding:26px;
+    padding-top:28px;
     font-weight: 500;
     text-align: center;
 }
@@ -238,7 +241,7 @@
     clear: left;
 }
 .more-icon{
-    margin-right:12px;
+    margin-right:16px;
     float: right;
 }
 .more-icon-bottom{
@@ -275,7 +278,6 @@
 .number1{
     position: absolute;
     right:-9%;
-    width:24px;
     background-color: #5fccc1;
     bottom:25px;
     padding:5px;
@@ -391,40 +393,37 @@
 .block4{
     padding-top:69px;
     background-color: #ebecf2;
+
 }   
 .titleofdiv{
     font-family: quicksand;
     font-size: 16px;
-    width:534px;
+    width:538px;
     background-color: #fff;
     border-bottom: 1px solid #E6E7ED;
     text-transform: uppercase;  
-    float:right;
-    margin:0 24px;
-    padding-left:30px;
     padding-top:18px;
     padding-bottom: 17px;
     font-weight: 900;
-    padding-left:30px;
+    padding-left:24px;
+    box-sizing: border-box;
 }
 
 .onel{ 
     padding-top:52px;
     font-family: lato;
     font-size: 16px;
-    float: right; 
-    min-width:534px;
     padding-left: 30px;
     background-color: #fff;
-    margin:0 24px;
     font-weight: 400;
+    color: #919599;
 }
 .twol{
     padding-top: 47px;
 }
 .threel{
     padding-top:60px;
-    padding-bottom:65px;
+    padding-bottom:70px;
 }
 .progressbar{
     border-radius:5px;
@@ -544,8 +543,6 @@ td{
     height:5px;
 }
 .positionrelative{
-    width: 93px;
-    height: 30px;
     background: #384b59;
     padding: 5px 0 0;
     box-sizing: border-box;
@@ -574,18 +571,14 @@ table td{
     background: #fff;
     bottom:0px;
     content:"";
-    position: relative;
     transform:scale(0);
     z-index: -1;
-
 }
 .menu{
     float: right;
     margin-top: -39px;
 }
 .positionrelative1{
-    width: 93px;
-    height: 30px;
     background: #384b59;
     padding: 5px 0 0;
     box-sizing: border-box;
@@ -593,4 +586,14 @@ table td{
 }
 .navContainer{
     margin-right:32px;
+}
+.clear{
+    clear: both;
+}
+.block4clear{
+    float: right;
+    width:564px;
+}
+.progressbarandtext{
+    margin-right: 24px;
 }
