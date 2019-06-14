@@ -363,7 +363,6 @@
 }
 .search{
     padding: 5px;
-    margin-right:32px;
     margin-top: 10px;
 } 
  
@@ -591,4 +590,7 @@ table td{
     padding: 5px 0 0;
     box-sizing: border-box;
     position: relative;
+}
+.navContainer{
+    margin-right:32px;
 }
