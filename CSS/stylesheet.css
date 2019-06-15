@@ -116,10 +116,8 @@
 
 .block2{
     margin: 0 24px;
-    padding-top: 99px;
-    padding-bottom:31px; 
+    padding-top: 55px;
     background-color: #ebecf2;
-    float: left;
 }
 
 .arrow-right-icon{
@@ -398,7 +396,7 @@
 .titleofdiv{
     font-family: quicksand;
     font-size: 16px;
-    width:538px;
+    width:564px;
     background-color: #fff;
     border-bottom: 1px solid #E6E7ED;
     text-transform: uppercase;  
@@ -417,6 +415,7 @@
     background-color: #fff;
     font-weight: 400;
     color: #919599;
+    float:inherit;
 }
 .twol{
     padding-top: 47px;
@@ -467,7 +466,6 @@
 .block5{
     background-color: #ebecf2;
     padding-top: 109px;
-    clear:both;
 }
 .table_heading{
     font-family: quicksand;
@@ -490,7 +488,7 @@
     float: left;
     text-align:left;
     border-bottom:1px solid #ebecf2;
-
+    margin-right:24px;
 }
 .date{
     text-align: center;
@@ -593,7 +591,9 @@ table td{
 .block4clear{
     float: right;
     width:564px;
+    margin-right:24px;
 }
 .progressbarandtext{
+    width:564px;
     margin-right: 24px;
 }
