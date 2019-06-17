@@ -154,8 +154,8 @@
 }
 
 .footer{
-    width:1187px;
-    height:13px;
+    width:1200px;
+    height:44px;
     background-color:#384b59;
     font-size: 11px;
     color: #9caab4;
@@ -165,6 +165,7 @@
     padding-bottom: 16px;
     padding-top: 15px;
     padding-right: 13px;
+    box-sizing: border-box;
 }
 .whiteboxmilestone{
     font-size: 16px;
