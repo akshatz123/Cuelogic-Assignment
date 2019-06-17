@@ -40,10 +40,8 @@
     
 }
 .block1{
-    background-color: #ebecf2;
     margin: 0 24px;
     padding-top: 43px;
-;
 }
 
 .yellowRectangle{
@@ -116,7 +114,6 @@
 .block2{
     margin: 0 24px;
     padding-top: 55px;
-    background-color: #ebecf2;
 }
 
 .arrow-right-icon{
@@ -237,8 +234,6 @@
 }
 .block3{
     padding-top:31px;
-    background-color: #ebecf2;
-    clear: left;
 }
 .more-icon{
     margin-right:16px;
@@ -390,8 +385,6 @@
 
 .block4{
     padding-top:69px;
-    background-color: #ebecf2;
-
 }   
 .titleofdiv{
     font-family: quicksand;
@@ -534,7 +527,7 @@ td{
     margin:0 24px;
     background-color: #fff;
     height:9px;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 .positionrelative{
     background: #384b59;
