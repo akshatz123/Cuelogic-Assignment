@@ -334,7 +334,7 @@
     font-weight: 500;
 }
 .check{
-    border-bottom:1px solid #ebecf2;footer
+    border-bottom:1px solid #ebecf2;
     vertical-align: middle;
     background-color: #fff;
     float: right;
@@ -534,7 +534,7 @@ td{
     margin:0 24px;
     background-color: #fff;
     height:9px;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 .positionrelative{
     background: #384b59;
