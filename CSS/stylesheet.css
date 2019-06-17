@@ -154,6 +154,7 @@
 }
 
 .footer{
+    margin-top:111px;
     width:1200px;
     height:44px;
     background-color:#384b59;
@@ -333,7 +334,7 @@
     font-weight: 500;
 }
 .check{
-    border-bottom:1px solid #ebecf2;
+    border-bottom:1px solid #ebecf2;footer
     vertical-align: middle;
     background-color: #fff;
     float: right;
@@ -462,9 +463,6 @@
     left: 0px;
 }
 
-.block5{
-    padding-top: 111px;
-}
 .table_heading{
     font-family: quicksand;
     font-size: 16px;
