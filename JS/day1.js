@@ -22,7 +22,7 @@ document.writeln(`<br> ${array1.concat(array2)}`);
 if (s2 !==null) {
     document.writeln(`<br>s2  is not null`);
   } else {
-    ('String in s2 is null');
+    document.write('<br>String in s2 is null');
   }
 for (var i = 0;i < 5;i++){
         i+=1;
@@ -32,4 +32,4 @@ for (var i = 0;i < 5;i++){
 function getRoot2() {
   return Math.SQRT2;
 } 
-document.write(`${getRoot2()}`);   
+document.write(`${getRoot2()}`);
