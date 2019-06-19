@@ -1,4 +1,3 @@
-
 var x; 
 x = 5;    
 let y = 6;    
@@ -22,7 +21,7 @@ document.writeln(`<br> ${array1.concat(array2)}`);
 if (s2 !==null) {
     document.writeln(`<br>s2  is not null`);
   } else {
-    document.write('<br>String in s2 is null');
+    document.write(`<br>String in s2 is null`);
   }
 for (var i = 0;i < 5;i++){
         i+=1;
