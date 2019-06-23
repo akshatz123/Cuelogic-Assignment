@@ -6,27 +6,26 @@
     <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="CSS/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="CSS/reset.css" type="text/css"/>
-    <title>Javascript Assignment</title>
+    <title>Registration</title>
 </head>
 <body>
     <div class="center">
         
         <h1>To Do app Registration Page</h1>
-            <script src="JS Files/script.js"></script>
-        <form>
-            Email Address <input type="email" name="email"placeholder="Enter your email"><br />
-            Username <input type="text"name="username" placeholder="Enter your username"><br />
-            Password <input type="password" name="password" placeholder="Enter your password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})" id="passwd" onclick="password_validation(password_validation)"><br />
-            First Name <input type="text" name="fname" placeholder="Enter your first name"><br />
-            Last Name <input type="text" name="lname" placeholder="Enter your last name"><br />
-            Gender  <input type="radio" name="gender" value="male">Male
-                    <input type="radio" name="gender" value="female">Female
-                    <input type="radio" name="gender" value="other">Other</br>
-            Address <textarea cols="20px" rows="4px" placeholder="Enter your address"></textarea><br />
-                    <a href="JS/login.html">
-                        <input type="submit" value="Submit">
-                    </a>
-        </form>
+            <script src="JS Files/register.js"></script>
+            <form action="." method="GET" name="login">
+                Email Address <input type="email" name="email"placeholder="Enter your email" id="email" onsubmit="return validation_email()"><br /><br />
+                Username <input type="text"name="username" placeholder="Enter your username" id="uname" onsubmit="return validation_username()"><br /><br/>
+                Password <input type="password" name="password" placeholder="Enter your password" id="pass" onsubmit="return validation_password()"><br /><br/>
+                First Name <input type="text" placeholder="Enter first name" name="fname"  id="fname" onsubmit="return fname_validate()"><br/><br/>
+                Last Name <input type="text" placeholder="Enter last name" name="lname" id="lname" onsubmit="return lname_validate()"><br/><br />
+                Gender <input type="radio" name="gender" id="radio"> Male
+                <input type="radio" name="gender" id="radio"> Female
+                <input type="radio" name="gender" id="radio"> Others<br /><br />
+                Address <textarea placeholder="Enter address" name="address"rows="5" cols="20" id="address" onsubmit="return address_validate() "word-break:" break-word"></textarea><br /><br />
+                <button type="submit" value="" onclick="return checkforblank()"><a href="javascript:void()">Submit</a></button>
+     </form>
     </div>
+
 </body>
 </html>

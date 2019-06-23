@@ -1,178 +1,41 @@
-// function formValidation()
-// {
-// var uid = document.registration.userid;
-// var passid = document.registration.passid;
-// var uname = document.registration.username;
-// var uadd = document.registration.address;
-// var ucountry = document.registration.country;
-// var uzip = document.registration.zip;
-// var uemail = document.registration.email;
-// var umsex = document.registration.msex;
-// var ufsex = document.registration.fsex; if(userid_validation(uid,5,12))
-// {
-// if(passid_validation(passid,7,12))
-// {
-// if(allLetter(uname))
-// {
-// if(alphanumeric(uadd))
-// { 
-// if(countryselect(ucountry))
-// {
-// if(allnumeric(uzip))
-// {
-// if(ValidateEmail(uemail))
-// {
-// if(validsex(umsex,ufsex))
-// {
-// }
-// } 
-// }
-// } 
-// }
-// }
-// }
-// }
-// return false;
-
-// } function userid_validation(uid,mx,my)
-// {
-// var uid_len = uid.value.length;
-// if (uid_len == 0 || uid_len >= my || uid_len < mx)
-// {
-// alert("User Id should not be empty / length be between "+mx+" to "+my);
-// uid.focus();
-// return false;
-// }
-// return true;
-// }
-// function passid_validation(passid,mx,my)
-// {
-// var passid_len = passid.value.length;
-// if (passid_len == 0 ||passid_len >= my || passid_len < mx)
-// {
-// alert("Password should not be empty / length be between "+mx+" to "+my);
-// passid.focus();
-// return false;
-// }
-// return true;
-// }
-// function allLetter(uname)
-// { 
-// var letters = /^[A-Za-z]+$/;
-// if(uname.value.match(letters))
-// {
-// return true;
-// }
-// else
-// {
-// alert('Username must have alphabet characters only');
-// uname.focus();
-// return false;
-// }
-// }
-// function alphanumeric(uadd)
-// { 
-// var letters = /^[0-9a-zA-Z]+$/;
-// if(uadd.value.match(letters))
-// {
-// return true;
-// }
-// else
-// {
-// alert('User address must have alphanumeric characters only');
-// uadd.focus();
-// return false;
-// }
-// }
-// function countryselect(ucountry)
-// {
-// if(ucountry.value == "Default")
-// {
-// alert('Select your country from the list');
-// ucountry.focus();
-// return false;
-// }
-// else
-// {
-// return true;
-// }
-// }
-// function allnumeric(uzip)
-// { 
-// var numbers = /^[0-9]+$/;
-// if(uzip.value.match(numbers))
-// {
-// return true;
-// }
-// else
-// {
-// alert('ZIP code must have numeric characters only');
-// uzip.focus();
-// return false;
-// }
-// }
-// function ValidateEmail(uemail)
-// {
-// var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-// if(uemail.value.match(mailformat))
-// {
-// return true;
-// }
-// else
-// {
-// alert("You have entered an invalid email address!");
-// return false;
-// }
-// } function validsex(umsex,ufsex)
-// {
-// x=0;
-
-// if(umsex.checked) 
-// {
-// x++;
-// }
-// if(ufsex.checked)
-// {
-// x++; 
-// }
-
-// if (x==2)
-// {
-// alert('Both Male/Female are checked');
-// ufsex.checked=false
-// umsex.checked=false
-// umsex.focus();
-// return false;
-// }
-
-// if(x==0)
-// {
-// alert('Select Male/Female');
-// umsex.focus();
-// return false;
-// }
-// else
-// {
-// alert('Form Succesfully Submitted');
-// window.location.reload()
-// return true;
-// }
-// }
-function validation(){
-    var uname= document.login.email.value;
-    var pwd= document.login.pass.value;
-
-// check empty field
-    if (uname==""|| pwd==""){
-        alert(`Field Empty`);
-        return;
+function logins(){
+    // check empty field
+    var pwd=document.login.pass.value;
+    var email= document.login.email.value;
+    if (email==''){
+        document.getElementById('email').style.borderColor="red";
     }
-    //
+    if (pwd==''){
+        document.getElementById('pass').style.borderColor="red";
+    }
+    if (pwd==''||email==''){
+        return false;    
+    }
+    
+}
+
+function validation_password(){
+    alert("Plz enter with 1 character, 1 lower case 1 upper case, and 1 number  min 8 characters");
     //password validation
-    var passwdregex='[a-zA-Z0-9]$';
-    var password_result=pwd.match(passwdregex);
-    if (password_result)
-    {
-        document.write(window.open(todo.html));
+    var pwd=document.login.pass.value;
+    var passwdregex='^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])$'
+    var password_result = pwd.match(passwdregex);
+    if(password_result&&(pwd.length > 6)){
+        alert("Plz enter with 1 character, 1 lower case 1 upper case, and 1 number  min 8 characters");
+        return false;
+    }
+    console.log("in password_result");
+    if(password_result.length<=8)
+        alert("Password must be of 8 characters. Please re-enter your Password");
+        return false;
+    }
+ 
+function ValidateEmail(email) {
+    //email validation
+    var email= document.login.email.value;
+    var emailregex='[a-zA-Z0-9\\+\\.\\_\\%\\-\\]{1,256}\\@[a-zA-z0-9][a-zA-z0-9\\-]{0, 64}(\\[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})';
+    var emailresult = email.match(emailregex);
+    if (emailresult){
+        return false;
     }
 }

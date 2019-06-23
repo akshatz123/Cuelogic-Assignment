@@ -12,13 +12,11 @@
 <body>
     <div class="center">
         <script src="JS Files/script.js"></script>
-        <form action="." name="login">
-            Email Address/Username <input type="email" value="" name="email"placeholder="Enter your email"><br />
-            Password <input type="password" name="pass" placeholder="Enter your Password" ><br />
-            <button type="submit" value="submit" onclick="validation()">Login</button>
-
+        <form action="." name="login" method="get">
+            Email Address <input type="text" name="email" placeholder="Enter your email address" id="email" onsubmit="return ValidateEmail(email)"><br />
+            Password <input type="password" name="pass" placeholder="Enter your Password" id="pass" onsubmit="return validation_password();"><br />
+            <button type="submit" value="submit" id="login" onclick="return logins()"><a href="todo.html">Login</a></button>
         </form>
-        
     </div>
 </body>
 </html>
