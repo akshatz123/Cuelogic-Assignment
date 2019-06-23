@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="CSS/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/reset.css" type="text/css"/>
+    <title>Login</title>
+</head>
+<body>
+    <div class="center">
+        <script src="JS Files/script.js"></script>
+        <form action="." name="login" method="get">
+            Email Address <input type="text" name="email" placeholder="Enter your email address" id="email" onsubmit="return ValidateEmail(email)"><br />
+            Password <input type="password" name="pass" placeholder="Enter your Password" id="pass" onsubmit="return validation_password();"><br />
+            <button type="submit" value="submit" id="login" onclick="return logins()"><a href="todo.html">Login</a></button>
+        </form>
+    </div>
+</body>
+</html>
