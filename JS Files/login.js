@@ -17,19 +17,16 @@ function logins(){
 function validation_password(){
     //password validation
     var pwd=document.login.pass.value;
-    var passwdregex='(?=.*[0-9])[a-z][A-Z][@#$%^&+=])$'
+    var passwdregex='[a-zA-Z0-9|\W].{6,}';
     var password_result = pwd.match(passwdregex);
-    if (password_result){
+    if (!(password_result)){
         return;
 }
 }
 function username_validation(){
-    var userregex ="[A-Za-z]";
+    var userregex ='[A-Za-z]';
     var username_result = document.login.uname.value.match(userregex);
-    if (username_result){
-        return;
+    if (!(username_result)){
+        return false;
     }
 }
-var Obj=new Object();
-Obj.stdpwd=getItem("pwd");
-Obj.stduname=getItem("uname");
