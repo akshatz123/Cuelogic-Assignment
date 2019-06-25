@@ -1,106 +1,107 @@
-var pwd= document.login.pass.value;
-var lname = document.login.lname.value;
-var email=  document.login.email.value;
-var uname = document.login.uname.value;
-var fname = document.login.fname.value;
-var gender = document.login.gender.value;
-var address = document.login.address.value;
+var pwd;
+var lname;
+var email;
+var uname;
+var fname;
+var gender;
+var address;
+var JSON1;
 function check_for_blank(){
-    if (email==''){
+    if ((email=  document.login.email.value)==''){
         document.getElementById('email').style.borderColor="red";
     }
-    if (pwd==''){
+    if ((pwd = document.login.pass.value)==''){
         document.getElementById('pass').style.borderColor="red";
     }
-    if (fname==''){
+    if ((fname=  document.login.fname.value)==''){
         document.getElementById('fname').style.borderColor="red";
     }
-    if (uname ==''){
+    if ((uname=  document.login.uname.value) ==''){
         document.getElementById('uname').style.borderColor="red";
     }
-    if (lname ==''){
+    if ((lname = document.login.lname.value) ==''){
         document.getElementById('lname').style.borderColor="red";
     }
-    if((gender.length)==''){
+    if((gender=  document.login.gender.value) ==''){
         document.getElementById('radio').style.borderColor="red";
     }
-    if (address ==''){
+    if ((address=  document.login.address.value) ==''){
         document.getElementById('address').style.borderColor="red";
     }
     if (fname==''||lname==''||address==''||pwd==''||email=='' ){
         return false;
     }
 
-
-function address_validate(){
+    //Address Validation
     var address_regex= '^[#.0-9a-zA-Z\s,-]+$';
     var add =document.getElementById('address').value;
     var address_result=add.match(address_regex);
-    if((address_result)){
-        return;
+    if(!(address_result)){
+        document.getElementById("address").style.borderColor= "Red";
+        return false;
     }
-}
-function fname_validate(){
-    var fname =document.getElementById('fname').value;
-    let name_regex ='[a-zA-z]';
+    
+    // Firstname Validation
+    fname =document.getElementById('fname').value;
+    var name_regex ='[a-zA-z]';
     var fname_result= fname.match(name_regex);
-    if((fname_result)){
-        return;
+    if(!(fname_result)){
+        document.getElementById("fname").style.borderColor= "Red";
+        return false;
     }
-}
-
-function lname_validate(){
-    var lname = document.getElementById('lname').value;
-    var lname_result = lname.match(fname_validate.name_regex);
-    if((lname_result)){
-        return;
+    
+    //lastname validation
+    lname = document.getElementById('lname').value;
+    var lname_result = lname.match(name_regex);
+    if(!(lname_result)){
+        document.getElementById("lname").style.borderColor= "Red";
+        return false;
     }
-}
 
-function validation_password(){
     //password validation
-    var pwd=document.login.pass.value;
-    var passwdregex='^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])$'
+    pwd=document.getElementById('pass').value;
+    // var passwdregex='^[0-9a-zA-Z@#$%\/^&+=]$';
+    var passwdregex ='[a-zA-Z0-9|\W].{6,}';
     var password_result = pwd.match(passwdregex);
-    if((password_result)){
-        return;
+    if(!(password_result)){
+        document.getElementById("pass").style.borderColor= "Red";
+        return false;
     }
-}
-function ValidateEmail(email) {
+
     //email validation
     var email= document.login.email.value;
-    var emailregex='[a-zA-Z0-9\\+\\.\\_\\%\\-\\]{1,256}\\@[a-zA-z0-9][a-zA-z0-9\\-]{0, 64}(\\[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})';
+    // var emailregex='[a-zA-Z0-9\\+\\.\\_\\%\\-\\]{1,256}\\@[a-zA-z0-9][a-zA-z0-9\\-]{0, 64}(\\[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})';
+    var emailregex='^\w+@[a-zA-Z_]+?\.[a-zA-Z]';
     var emailresult = email.match(emailregex);
-    if((emailresult)){
-        return;
+    if(!(emailresult)){
+        return false;
     }
-}
-function ValidateUsername(){
-    var user =document.login.uname.value;
-    var userreg = [A-Za-z];
-    if(user.match(userreg)){
-        return;
+
+    //username validation
+    var user =document.getElementById('uname').value;
+    var userreg = "[A-Za-z]";
+    var userresult = user.match(userreg);
+    if(!(userresult)){
+        document.getElementById("uname").style.borderColor= "Red";
+        return false;
     }
-}
+
 //Local Storage
-var userdetails = new Array ("lname", "pwd", "address", "uname", "email", "fname", "gender");
+var DB =[];
 
 if (typeof(Storage) !== "undefined") {
-    // Store
-    localStorage.setItem("last Name","lname.value");
-    localStorage.setItem("fname", "fname.value");
-    localStorage.setItem("pwd", "pass.value");  
-    localStorage.setItem("address", "address.value"); 
-    localStorage.setItem("uname", "uname.value");
-    localStorage.setItem("email", "email.value");
-    localStorage.setItem("gender", "gender.value");
-    return userdetails;
-}
-function OnSubmit(){
-    window.location.href = 'http://www.google.com'; //Will take you to Google.
-}
-check_for_blank();
-check_for_blank.validation_password;
-check_for_blank.ValidateUsername;
-check_for_blank.address_validate;
-}
+    var obj = {
+    FirstName :   fname,
+    Address:  address,
+    Password:    pass.value,
+    Gender:   gender,
+    Email:    email,
+    Username:    uname,
+    LastName :   lname
+};
+
+DB.push(obj);
+var myJSON= JSON.stringify(DB);
+// let s1 = JSON.parse(obj);
+localStorage.setItem("userDetails", myJSON);
+}}
