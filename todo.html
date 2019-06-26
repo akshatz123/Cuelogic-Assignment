@@ -5,20 +5,20 @@
         <link rel="stylesheet" href="CSS/normalize.css" />
         <link rel="stylesheet" href="CSS/reset.css" />
         <link rel="stylesheet" href="CSS/stylesheet.css" />
-        <script src="JS Files/todo.js"></script>
         <title>To Do </title>
     </head>
     <body>
 
     <div class=center>
+        <script src="JS Files/todo.js"></script>
         <h1>My To Do List</h1>
-        <form method="POST">
+        <form method="POST" name="login">
             <input type="text" id="myInput">
-            <span class="addBtn">
-                <button onclick="newElement()"> Add</button><br/>
-                <button><a href="login.html">LOGOUT</a></button><br />
+            <div class="addBtn" onclick="return newElement()">
+ Add<br/><br />
+               <button onsubmit="OnSubmit()">LOGOUT</a></button><br />
                 <ul id="myUL"></ul>
-            </span>
+            </div>
          </form>
     </div>    
     </body>

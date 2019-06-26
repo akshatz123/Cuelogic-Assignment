@@ -1,17 +1,13 @@
-var pwd;
-var lname;
-var email;
-var uname;
-var fname;
-var gender;
-var address;
-var JSON1;
+var pwd = '';
+var lname = '';
+var uname = '';
+var fname = '';
+var gender = '';
+var address = '';
 function check_for_blank(){
-    if ((email=  document.login.email.value)==''){
-        document.getElementById('email').style.borderColor="red";
-    }
     if ((pwd = document.login.pass.value)==''){
         document.getElementById('pass').style.borderColor="red";
+
     }
     if ((fname=  document.login.fname.value)==''){
         document.getElementById('fname').style.borderColor="red";
@@ -28,7 +24,7 @@ function check_for_blank(){
     if ((address=  document.login.address.value) ==''){
         document.getElementById('address').style.borderColor="red";
     }
-    if (fname==''||lname==''||address==''||pwd==''||email=='' ){
+    if (fname==''||lname==''||address==''||pwd==''||gender==''||uname==''){
         return false;
     }
 
@@ -68,15 +64,6 @@ function check_for_blank(){
         return false;
     }
 
-    //email validation
-    var email= document.login.email.value;
-    // var emailregex='[a-zA-Z0-9\\+\\.\\_\\%\\-\\]{1,256}\\@[a-zA-z0-9][a-zA-z0-9\\-]{0, 64}(\\[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})';
-    var emailregex='^\w+@[a-zA-Z_]+?\.[a-zA-Z]';
-    var emailresult = email.match(emailregex);
-    if(!(emailresult)){
-        return false;
-    }
-
     //username validation
     var user =document.getElementById('uname').value;
     var userreg = "[A-Za-z]";
@@ -87,21 +74,35 @@ function check_for_blank(){
     }
 
 //Local Storage
-var DB =[];
-
 if (typeof(Storage) !== "undefined") {
     var obj = {
     FirstName :   fname,
     Address:  address,
     Password:    pass.value,
     Gender:   gender,
-    Email:    email,
     Username:    uname,
     LastName :   lname
 };
-
-DB.push(obj);
-var myJSON= JSON.stringify(DB);
-// let s1 = JSON.parse(obj);
-localStorage.setItem("userDetails", myJSON);
-}}
+var userDetails = localStorage.getItem("userDetails");
+//console.log("userDetails===>",userDetails);
+var parse=JSON.parse(userDetails);
+if(parse === null){
+    parse = [];
+}
+parse.push(obj)
+var string=JSON.stringify(parse);
+localStorage.setItem("userDetails",string);
+}
+    
+}
+function registration(){
+    if (check_for_blank()){
+        alert("Successfully Registered");
+        window.location.href=login.html;
+    }
+}
+function uniqueDetails(){
+    if (uname.match(obj.uname)){
+        alert('Please enter another username. This username is already registered.')
+    }
+}

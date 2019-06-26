@@ -1,7 +1,8 @@
+var pwd, uname;
 function logins(){
     // check empty field
-    var pwd=document.login.pass.value;
-    var email= document.login.email.value;
+    pwd=document.login.pass.value;
+    email= document.login.email.value;
     if (email==''){
         document.getElementById('email').style.borderColor="red";
     }
@@ -11,21 +12,20 @@ function logins(){
     if (pwd==''||email==''){
         return false;    
     }
-    
 }
-
+//password validation
 function validation_password(){
-    //password validation
-    var pwd=document.login.pass.value;
-    var passwdregex='[a-zA-Z0-9|\W].{6,}';
-    var password_result = pwd.match(passwdregex);
+    pwd=document.login.pass.value;
+    passwdregex='[a-zA-Z0-9|\W].{6,}';
+    password_result = pwd.match(passwdregex);
     if (!(password_result)){
-        return;
+        return false;
+    }
 }
-}
+//username validation
 function username_validation(){
-    var userregex ='[A-Za-z]';
-    var username_result = document.login.uname.value.match(userregex);
+    userregex ='[A-Za-z]';
+    username_result = document.login.uname.value.match(userregex);
     if (!(username_result)){
         return false;
     }
