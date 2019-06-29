@@ -7,7 +7,6 @@ var address = '';
 function check_for_blank(){
     if ((pwd = document.login.pass.value)==''){
         document.getElementById('pass').style.borderColor="red";
-
     }
     if ((fname=  document.login.fname.value)==''){
         document.getElementById('fname').style.borderColor="red";
@@ -73,36 +72,53 @@ function check_for_blank(){
         return false;
     }
 
-//Local Storage
-if (typeof(Storage) !== "undefined") {
+    var userDetails=new Array();
     var obj = {
-    FirstName :   fname,
-    Address:  address,
-    Password:    pass.value,
-    Gender:   gender,
-    Username:    uname,
-    LastName :   lname
-};
-var userDetails = localStorage.getItem("userDetails");
-//console.log("userDetails===>",userDetails);
-var parse=JSON.parse(userDetails);
-if(parse === null){
-    parse = [];
-}
-parse.push(obj)
-var string=JSON.stringify(parse);
-localStorage.setItem("userDetails",string);
-}
-    
-}
+        "FirstName" :   fname,
+        "Address":  address,
+        "Password":    pass.value,
+        "Gender":   gender,
+        "Username":    uname,
+        "LastName" :   lname,
+        "ToDO": []
+        };
+   // console.log(localStorage.getItem("userDetails"));
+    if (localStorage.getItem("userDetails")) {
+        userDetails = JSON.parse(localStorage.getItem("userDetails"));
+        var isUserExists = false;
+        for (i=0; i < userDetails.length; i++){
+            console.log("type of->",typeof Username);
+            if ((userDetails[i].Username) == user){
+                isUserExists = true;
+            }  
+        }
+
+        if (isUserExists) {
+           alert('user with same name already exists.');
+            document.getElementById('uname').value='';
+            return false;
+        } 
+        else {
+            userDetails.push(obj);
+            var string = JSON.stringify(userDetails);
+            localStorage.setItem("userDetails", string);
+            return true;
+        }
+    }
+    else {
+        userDetails.push(obj);
+        var string = JSON.stringify(userDetails);
+        localStorage.setItem("userDetails", string);
+        return true;
+    }
+
+}   
 function registration(){
     if (check_for_blank()){
-        alert("Successfully Registered");
-        window.location.href=login.html;
-    }
-}
-function uniqueDetails(){
-    if (uname.match(obj.uname)){
-        alert('Please enter another username. This username is already registered.')
+        // alert("Successfully Registered");
+        console.log("Successfully Registered");
+        window.open('login.html', "_self");
+    } else {
+        alert('Something went wrong');
     }
 }
