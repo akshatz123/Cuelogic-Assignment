@@ -14,11 +14,10 @@
         <h1>My To Do List</h1>
         <form method="POST" name="login">
             <input type="text" id="myInput">
-            <div class="addBtn" onclick="return newElement()">
- Add<br/><br />
-               <button onsubmit="OnSubmit()">LOGOUT</a></button><br />
+            <input type="button" value="Add"    onclick="return newElement()"><br/><br />
+                <input type="button" value="Profile" id="profile" onclick="profile()"><br /><br />
                 <ul id="myUL"></ul>
-            </div>
+               <input type="button"  value="Logout" onclick="onSubmit()"><br /><br />
          </form>
     </div>    
     </body>

@@ -19,13 +19,13 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('ul');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
-
+var list = document.querySelector('ul');
+/* list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+ */
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");
@@ -54,14 +54,40 @@ function newElement() {
         }
     }
 }
+function onSubmit(){
+  sessionStorage.clear();
+  alert("Your session Expired. Pls relogin to complete the transaction.");
+}
+function profile(){
+  if(sessionStorage.clear()==false){
+    window.location.href='profile.html';
+  }
+}
 //local storage
-if (typeof(Storage) != "undefined") {
-    // Retrieve
-    localStorage.getItem("uname");
-    localStorage.getItem("password");
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-  }
-  function OnSubmit(){
-    return window.location.href="www.google.com";
-  }
+
+var userDetails=new Array();
+var obj = {
+    "FirstName" :   fname,
+    "Address":  address,
+    "Password":    pass.value,
+    "Gender":   gender,
+    "Username":    uname,
+    "LastName" :   lname,
+    "ToDO": []
+    };
+// console.log(localStorage.getItem("userDetails"));
+var todoObj={
+  Description:description,
+  
+  // userDetails.push(obj);
+  //       var string = JSON.stringify(userDetails);
+  //       localStorage.setItem("userDetails", string);
+  //       return true;
+  //   }
+}
+else {
+    userDetails.push(obj);
+    var string = JSON.stringify(userDetails);
+    localStorage.setItem("userDetails", string);
+    return true;
+}

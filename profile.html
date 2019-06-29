@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="JS Files/profile.js"></script>
-    <title>Profile</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script src="JS Files/profile.js"></script>
+    <script src=""></script>
+    <title>Profile</title>
 </head>
 <body>
-    
-</body>
+    <form method="POST" name="login">
+        Username <input type="text" name="username" placeholder="Enter your username" id="uname" disabled><br /><br/>
+        Password <input type="password" name="password" placeholder="Enter your password" id="pass"disabled><br /><br/>
+        First Name <input type="text" placeholder="Enter first name" name="fname"  id="fname"disabled><br/><br/>
+        Last Name <input type="text" placeholder="Enter last name" name="lname" id="lname"disabled><br/><br />
+        Gender <input type="radio" name="gender" id="radio" disabled> Male
+        <input type="radio" name="gender" id="radio"disabled> Female<br /><br />
+        Address <textarea placeholder="Enter address" name="address" rows="5" cols="20" id="address" disabled></textarea><br /><br />
+        <!-- Insert Image <button type="button" >Choose profile picture </button><br /> <br /> -->
+        <input type="button" value="Registration" onclick=edit()> 
+    </form></body>
 </html>

@@ -10,15 +10,15 @@
     <title>Login</title>
 </head>
 <body>
-    <button type="button" id="profile"onclick="location.href='profile.html'">Profile</button>
     <div class="center">
        <h1>LOGIN</h1>
-            <script src="JS Files/login.js"></script>
-        <form action="." name="login" method="post" onsubmit="logins()">
+       <!-- <script src="JS Files/register.js"></script> -->
+       <script src="JS Files/login.js"></script>
+        <form name="login" method="post">
             
-            Username  <input type="text" name="uname" placeholder="Enter your username" id="uname" onsubmit="return username_validation()"><br /><br />
-            Password <input type="password" name="pass" placeholder="Enter your Password" id="pass" onsubmit="return validation_password();"><br /><br />
-            <button type="submit" value="submit" onclick="logins();location.href='todo.html'">Login</button>
+            Username  <input type="text" name="username" placeholder="Enter your username" id="uname"required><br /><br />
+            Password <input type="password" name="password" placeholder="Enter your Password" id="pass"required><br /><br />
+            <input type="button" value="Login" onclick=logins()>
         </form>
     </div>
 </body>
