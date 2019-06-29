@@ -12,24 +12,24 @@ function newElement() {
     "Categories":categories
   }
   //local storage
-  user_name = sessionStorage.getItem('user'); 
-  console.log(sessionStorage.getItem('user'))//fetch data from session storage
-      todoObj = document.getElementById("Add").value;
-      var TodoItem = JSON.parse(localStorage.getItem("userDetails"));
-      for(var index = 0; index < TodoItem.length; index++)
+  user_name = sessionStorage.getItem("user"); 
+  // console.log(sessionStorage.getItem('user'))//fetch data from session storage
+      
+      var Todo12 = JSON.parse(localStorage.getItem("userDetails"));
+      for(var i = 0; i < Todo12.length; i++)
       {
+
         console.log(`IN for loop`);
-        if(user_name == TodoItem[index].user)   // username found then break
+        if(user_name == Todo12[i].Username)   // username found then break
         {
-          //console.log(TodoItem[index].user);
-          TodoItem[index].todo_list.push(todoObj);
-          //console.log(TodoItem[index].todo_list.push(TodoItem));
-localStorage.setItem("userDetails",JSON.stringify(TodoItem));
-          //console.log(JSON.stringify(TodoItem));
+          Todo12[i].ToDO.push(todoObj);
+          break;
         }
       }
-
-  }
+          localStorage.setItem("userDetails",JSON.stringify(Todo12));
+        }
+    
+  
 
  
 function onSubmit(){
