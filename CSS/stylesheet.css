@@ -32,3 +32,14 @@ button{
     margin-top:10px;
     margin-right: 10px;
 }
+#categories{
+    background-color: #fff;
+    margin-left:10px;
+}
+#due-date{
+    margin-left: 10px;
+}
+table, tbody, td{
+    color: #fff;
+    margin: auto;
+}

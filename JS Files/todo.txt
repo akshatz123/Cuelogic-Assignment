@@ -1,0 +1,30 @@
+var userRecordArray = JSON.parse(localStorage.getItem("users"));
+    var arraydelete = document.getElementsByName("deleteclass");
+    var index = getIndex();
+    for(var count=(userRecordArray[index].todoList.length-1);count>=0;count--)
+    {
+        if(arraydelete[count].checked === true)
+        { console.log(arraydelete);
+            userRecordArray[index].todoList.splice(count,1);
+         }
+         console.log(arraydelete);
+        }
+    localStorage.setItem("users",JSON.stringify(userRecordArray));	
+    window.location.reload();
+
+     var userRecordArray = JSON.parse(localStorage.getItem("users"));
+    var arraydelete = document.getElementsByName("deleteclass");
+    var index = getIndex();
+    for(var count=(userRecordArray[index].todoList.length-1);count>=0;count--)
+    {
+        if(arraydelete[count].checked === true)
+        { console.log(arraydelete);
+            userRecordArray[index].todoList.splice(count,1);
+         }
+         console.log(arraydelete);
+    }
+    localStorage.setItem("users",JSON.stringify(userRecordArray));	
+    window.location.reload();
+    }
+
+  

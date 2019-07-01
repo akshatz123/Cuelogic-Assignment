@@ -12,21 +12,17 @@ function logins(){
         }
         //password validation
         var pass=document.getElementById('pass').value;
-        // var passwdregex='^[0-9a-zA-Z@#$%\/^&+=]$';
         var passwdregex ='[a-zA-Z0-9|\W].{6,}';
         var password_result = pass.match(passwdregex);
         if(!(password_result)){
             document.getElementById("pass").style.borderColor= "Red";
             return false;
         }
-    if(pass.match(localStorage.getItem("userDetails")) &&  user.match(localStorage.getItem("userDetails"))){
+    if(localStorage.getItem("userDetails").includes(pass) &&  (localStorage.getItem("userDetails").includes(user))){
         isLoggedIn = true;
         if(isLoggedIn===true){
-            //var current_user=sessionStorage.getItem("userDetails");
-            // sessionStorage.setItem(uname,"current_user");
             sessionStorage.setItem('user',user );
-            //windows.open('todo.html'," _self");
+            window.location='todo.html';
             }
         }
-
-}
+    }
