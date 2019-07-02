@@ -25,4 +25,7 @@ function logins(){
             window.location='todo.html';
             }
         }
-    }
+    else {
+        alert("Invalid Password/Username");
+}
+}

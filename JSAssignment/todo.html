@@ -5,14 +5,16 @@
         <link rel="stylesheet" href="CSS/normalize.css" />
         <link rel="stylesheet" href="CSS/reset.css" />
         <link rel="stylesheet" href="CSS/stylesheet.css" />
+ 
         <title>To Do </title>   
     </head>
     <body onload=display_element()>
+
     <div class=center>
         <h1>My To Do List</h1>
         <form method="POST" name="login">
-            <input type="text" id="description">
-            <input type="button" value="Profile" id="profile" onclick="profile()"><br /><br />
+            <input type="text" placeholder="Enter todo list" id="description">
+            <input type="button" value="Profile" id="profile" onclick="viewprofile()"><br /><br />
             Category<select name="categories" value="Select Category" id="categories"required>&nbsp;
             <option id="categories" value="Personal">Personal</option>
             <option id="categories" value="Office">Office</option>
@@ -22,7 +24,9 @@
             <ul id="myUL"></ul>
             <input type="button" value="Add" id="Add" onclick="newElement()"><br /><br />
             <input type="button"  value="Logout" onclick="onSubmit()"><br /><br />
-            <input type="button" value="Delete" onclick="onDelete()"><br /><br />
+            <input type="button" value="Delete" onclick="onDelete()"><br /><br />    
+        </form>
+        
     <table id="todo_table">
         <thead id ="table_head">
             <tr>
@@ -34,12 +38,16 @@
             </tr>
         </thead>
         <tbody id="table_body" ></tbody>
-    <tbody>
+    <tbody  >
+
     </tbody>
     </table>
 </form>
 </div>
 <script src="JS Files/login.js"></script>
 <script src="JS Files/todo.js"></script>
+<script src="JS Files/todooperation.js"></script>
+
 </body>
+
 </html>

@@ -18,24 +18,21 @@ function save(){
             user1[index].fname = fname;
             user1[index].lname = lname;
             user1[index].Address = Address;
-            user1[index] = JSON.stringify(user1);
-            
+            user1[index] = JSON.stringify(user1[index]);
         }
-    localStorage.setItem('userDetails',user1[index]);
-    document.getElementById("fname").disabled=true;
-    document.getElementById("lname").disabled=true;
-    document.getElementById("Address").disabled=true;
-    }    
+        localStorage.setItem('userDetails',(user1[index].fname,user1[index].lname, user1[index].fname));
+    
+}    
 }
 //view profile
 function viewProfile(){
     for (var i=0; i< profile.length; i++){
         unameSession=uname;
         //document.getElementsByName("gender").value=profile[i].gender
-        document.getElementById("Address").value=profile1[i].Address;
-        document.getElementById("lname").value=profile1[i].LastName;
         document.getElementById("fname").value=profile1[i].FirstName;
+        document.getElementById("lname").value=profile1[i].LastName;
+        document.getElementById("Address").value=profile1[i].Address;
+        
         break;
     }
-    location.reload;
 }

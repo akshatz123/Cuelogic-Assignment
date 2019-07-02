@@ -1,30 +1,28 @@
-Todo12 = JSON.parse(localStorage.getItem("userDetails"));
-var  user_name, user, duedate, reminder, categories, isChecked;
-
-// var ToDo_array = JSON.parse(localStorage.getItem("userDetails"));
+var  user_name, user, duedate, reminder, categories;
+var ToDo_array = JSON.parse(localStorage.getItem("userDetails"));
 //Add function
 function newElement() {
-  var description1= document.getElementById("description").value;
-    var reminder= document.getElementById("date").value;
-    var duedate=document.getElementById("duedate").value;
-    var categories=document.getElementById("categories").value;
+    var description1= document.getElementById("description").value;
+      var eminder= document.getElementById("date").value;
+      var duedate=document.getElementById("duedate").value;
+      var categories=document.getElementById("categories").value;
     var todoObj = {
       "Description": description1,
       "Reminder": reminder,
-      "Due_Date":duedate,
+      "DueDate":duedate,
       "Categories":categories
   }
  //local storage
  user_name = sessionStorage.getItem("user"); //fetch data from session storage
-      for(var i = 0; i < Todo12.length; i++)
+      for(var i = 0; i < ToDo_array.length; i++)
       {
-        if(user_name == Todo12[i].Username)   // username found then break
+        if(user_name == ToDo_array[i].Username)   // username found then break
         {
-          Todo12[i].ToDO.push(todoObj);
+          ToDo_array[i].ToDO.push(todoObj);
           break;
         }
       }
-       localStorage.setItem("userDetails",JSON.stringify(Todo12));
+      localStorage.setItem("userDetails",JSON.stringify(ToDo_array));
   }
 //Display function  
 function display_element()
@@ -33,11 +31,11 @@ function display_element()
     //var is_public = document.getElementById("is_public").value;
     var todoList = [];
     user_name = sessionStorage.getItem("user"); //fetch data from session storage
-    for(var i = 0; i < Todo12.length; i++)
+    for(var i = 0; i < ToDo_array.length; i++)
     {
-      if(user_name == Todo12[i].Username)   // username found then break
+      if(user_name == ToDo_array[i].Username)   // username found then break
       {
-        todoList = Todo12[i].ToDO;
+        todoList = ToDo_array[i].ToDO;
         break;
       }
     }
@@ -45,9 +43,9 @@ function display_element()
     for( var i=0 ;i<todoList.length;i++ ) {
       var input= document.createElement("input");
       input.setAttribute("type", "checkbox");
-      input.setAttribute("id", "selectedcheckbox"+i);
+      input.setAttribute("class", "selectedcheckbox"+i);
       var td1=document.createElement("tr");
-      var row ="<tr><td><input type ='checkbox' id='selectedcheckbox'/></td><td>"+todoList[i].Description+"</td><td>"+todoList[i].Reminder+"</td><td>"+todoList[i].Due_Date+"</td><td>"+todoList[i].Categories+"</td></tr>";
+      var row = "<tr><td><input type ='checkbox' class='checkbox'/></td><td>"+todoList[i].Description+"</td><td>"+todoList[i].Categories+"</td><td>"+todoList[i].DueDate+"</td><td>"+todoList[i].Reminder+"</td><input type='button' type='button' value='Edit' onclick='edit()'/></tr>";
       td1.innerHTML=row;
       var table_head = document.getElementById("table_body");
       table_head.appendChild(td1);
@@ -55,48 +53,51 @@ function display_element()
 }
 //Delete Function
 function onDelete(){
-  // var j=0;
+
+  userArrayItems= JSON.parse(localStorage.getItem("userDetails"));
+  ToDo_array= JSON.parse(localStorage.getItem("userDetails"));
   var checker =0;
   var todoList;
-  var check = document.getElementById("selectedcheckbox");
+  var check = document.getElementsByClassName("checkbox");
   var table = document.getElementById("table_body");
-  for(var i = 0; i < Todo12.length; i++)
+  var userIndex = null;
+  for(var i = 0; i < ToDo_array.length; i++)
   {
-    if(user_name == Todo12[i].Username)   // username found then break
+    if(user_name == ToDo_array[i].Username)   // username found then break
     {
-      todoList = Todo12[i].ToDO;
-      break;
+      userIndex = i;
+      todoList = ToDo_array[i].ToDO;
+      // break;
     }
   }
+  //userDetails = userDetails[index].ToDO;
+        
   // // console.log(todoList.length)
-  for(var i=todoList.length-1;i>=0;i--){ 
-        // console.log(document.getElementById("selectedcheckbox"));
-        //for(var j= check[i].checked ;j<=check[i].checked.length-1; j++){
-          check.checked=true;
-          if(check.checked == true){
-            // console.log(i);  
-            checker+=1;
-            table.deleteRow(i);
-            todoList.splice(i,1);
-            localStorage.setItem("T",JSON.stringify(todoList));
-            location.reload();    
-          console.log(checker);;
-        }
-        }
+  for(var index=(todoList.length-1); index >= 0; index--){ 
+    if(check[index].checked == true){ 
+      checker+=1;
+      table.deleteRow(index);
+      todoList.splice(index, 1);
       
-  var inputs = document.querySelectorAll('selectedcheckbox');
-  for (var i = 0; i < inputs.length; i++) {
-    
-    if(inputs[i].checked == true)
-    console.log(inputs[i]);
-  break;  }
-    }
+      ToDo_array[userIndex].ToDO= todoList;
+
+      var updatedUserDetails = JSON.stringify(ToDo_array);
+      // localStorage.removeItem("userDetails",userDetails_removed_Todo_Array);  
+      localStorage.setItem("userDetails", updatedUserDetails );
+      location.reload();
+      }
+  }
+}
 //logout function 
 function onSubmit(){
   sessionStorage.clear();
   alert("Your session Expired. Please relogin to complete the transaction.");
   window.location="login.html";
 }
-function profile(){
+function viewprofile(){
   window.location.href='profile.html';
 }
+
+// function filter(){
+
+// }
