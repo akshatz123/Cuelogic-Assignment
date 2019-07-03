@@ -1,6 +1,9 @@
 profile=localStorage.getItem("userDetails");
 profile1=JSON.parse(profile);
 var uname=profile1.Username;
+users = localStorage.getItem('userDetails');
+var user1 = JSON.parse(users);
+    
 function logout(){
     sessionStorage.clear();
 }
@@ -8,34 +11,41 @@ function edit(){
     document.getElementById("fname").disabled=false;
     document.getElementById("lname").disabled=false;
     document.getElementById("Address").disabled=false;
-    users = localStorage.getItem('userDetails');
-    var user1 = JSON.parse(users);
-    for( index=0;index<user1.length;index++){
-          if(user1[index].uname === sessionStorage.getItem('user')){
-            var itr = index;
-    }
-    // document.getElementById("f_name").disabled = true;
-    // document.getElementById("l_name").disabled = true;
-    // document.getElementById("add_ress").disabled = true;
-    // document.getElementsByClassName("gender").disabled = true;
   }
-    console.log('index', itr);
-    user1[itr].fname = f_name;
-    user1[itr].lname = l_name;
-    user1[itr].address = add_ress;
-    user1 = JSON.stringify(user1);
-    localStorage.setItem('users',user1);
-    }
-    
+function save(){
+    for( index=0;index<user1.length;index++){
+        if(user1[index].uname === sessionStorage.getItem('user')){
+            user1[index].fname = fname;
+            user1[index].lname = lname;
+            user1[index].Address = Address;
+            user1[index] = JSON.stringify(user1[index]);
+        }
+        
+        localStorage.setItem('userDetails',);
+        document.getElementById("fname").disabled = true;
+        document.getElementById("lname").disabled = true;
+        document.getElementById("Address").disabled = true;
+        for (var i=0; i<document.getElementsByName("gender").length;i++){
+            document.forms.gender[i].value.disabled =true;
+        }
+    }    
+}
 //view profile
 function viewProfile(){
     for (var i=0; i< profile.length; i++){
-        unameSession=uname;
-        //document.getElementsByName("gender").value=profile[i].gender
-        document.getElementById("Address").value=profile1[i].Address;
-        document.getElementById("lname").value=profile1[i].LastName;
         document.getElementById("fname").value=profile1[i].FirstName;
+        document.getElementById("lname").value=profile1[i].LastName;
+        document.getElementById("Address").value=profile1[i].Address;
         break;
     }
-    location.reload;
+}
+function changeGender(){
+    if( document.getElementsByName("gender").checked){
+        document.getElementById("male").removeAttribute("disabled");
+        document.getElementById("female").removeAttribute("disabled");
+    } 
+    else{
+        document.getElementById("male").disabled =true;
+        document.getElementById("female").disabled =true
+    }
 }
